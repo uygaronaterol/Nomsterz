@@ -1,6 +1,8 @@
 package com.puncix12.nomsterz;
 
 import com.mojang.logging.LogUtils;
+import com.puncix12.nomsterz.block.ModBlocks;
+import com.puncix12.nomsterz.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,13 +18,13 @@ import org.slf4j.Logger;
 @Mod(Nomsterz.MOD_ID)
 public class Nomsterz
 {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "nomsterz";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     public Nomsterz()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
