@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:raw_beef"
+    },
+    "D": {
+      "item": "minecraft:raw_porkchop"
+    },
+    "O": {
+      "item": "minecraft:raw_chicken"
+    },
+    "S": {
+      "item": "minecraft:raw_mutton"
+    },
+    "Z": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "GDZ",
+    "OSZ",
+    "ZZ "
+  ],
+  "result": {
+    "item": "nomsterz:meat_package"
+  }
+}

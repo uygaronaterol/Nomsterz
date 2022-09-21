@@ -1,4 +1,13 @@
 {
-  "item.nomsterz.dawg_skin": "Dawg Skin",
-  "itemGroup.nomster_tab": "Nomster Tab"
+  "item.nomsterz.natshai_skin": "Natshai Skin",
+  "itemGroup.nomster_tab": "Nomster Tab",
+  "block.nomsterz.skin_block": "Skin Block",
+  "entity.nomsterz.natshai": "Natshai",
+  "item.nomsterz.natshai_spawn_egg": "Natshai Spawn Egg",
+  "item.nomsterz.nomster_commander": "Nomster Commander",
+  "item.nomsterz.raw_natshai_meat": "Raw Natshai Meat",
+  "item.nomsterz.cooked_natshai_meat": "Cooked Natshai Meat",
+  "item.nomsterz.dhirta": "Dhirta",
+  "item.nomsterz.dhirta_seed": "Dhirta Seed",
+  "block.nomsterz.dhirta_crop": "Dhirta Crop"
 }

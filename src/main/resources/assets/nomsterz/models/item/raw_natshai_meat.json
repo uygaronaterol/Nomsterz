@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "nomsterz:item/dawg_skin"
+    "layer0": "nomsterz:item/raw_natshai_meat"
   }
 }

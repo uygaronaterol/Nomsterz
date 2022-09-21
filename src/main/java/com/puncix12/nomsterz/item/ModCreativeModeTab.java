@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab NOMSTERZ_TAB = new CreativeModeTab("nomster_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.DAWG_SKIN.get());
+            return new ItemStack(ModItems.NATSHAI_SKIN.get());
         }
     };
 }
