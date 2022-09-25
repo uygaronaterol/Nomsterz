@@ -3,7 +3,7 @@
   "biomes": "#forge:is_hot",
   "entity": {
     "type": "nomsterz:natshai",
-    "weight": 20,
+    "weight": 10,
     "minCount": 4,
     "maxCount": 5
   }

@@ -1,7 +1,6 @@
 {
   "item.nomsterz.natshai_skin": "Natshai Skin",
   "itemGroup.nomster_tab": "Nomster Tab",
-  "block.nomsterz.skin_block": "Skin Block",
   "entity.nomsterz.natshai": "Natshai",
   "entity.nomsterz.swerdarm": "Swerdarm",
 
@@ -10,6 +9,8 @@
   "item.nomsterz.nomster_commander": "Nomster Commander",
   "item.nomsterz.raw_natshai_meat": "Raw Natshai Meat",
   "item.nomsterz.cooked_natshai_meat": "Cooked Natshai Meat",
+  "item.nomsterz.cooked_swerdarm_meat": "Cooked Swerdarm Meat",
+  "item.nomsterz.raw_swerdarm_meat": "Cooked Swerdarm Meat",
   "item.nomsterz.dhirta": "Dhirta",
   "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
   "item.nomsterz.dhirta_seed": "Dhirta Seed",
@@ -34,6 +35,8 @@
   "sounds.nomsterz.nyanga_death": "Nyanga Death",
   "sounds.nomsterz.natshai_idle": "Natshai Idle",
   "sounds.nomsterz.natshai_hit": "Natshai Hit",
-  "sounds.nomsterz.natshai_death": "Natshai Death"
-
+  "sounds.nomsterz.natshai_death": "Natshai Death",
+  "sounds.nomsterz.swerdarm_idle": "Swerdarm Idle",
+  "sounds.nomsterz.swerdarm_hit": "Swerdarm Hit",
+  "sounds.nomsterz.swerdarm_death": "Swerdarm Death"
 }

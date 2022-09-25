@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nomsterz:natshai_skin"
+          "name": "nomsterz:swerdarm_sword_piece"
         }
       ]},{
       "rolls": {
@@ -19,14 +19,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nomsterz:raw_natshai_meat"
+          "name": "nomsterz:raw_swerdarm_meat"
         }
       ]
     }
   ,{
       "rolls": {
-        "min": 2,
-        "max": 3
+        "min": 7,
+        "max": 8
       },
       "entries": [
         {
