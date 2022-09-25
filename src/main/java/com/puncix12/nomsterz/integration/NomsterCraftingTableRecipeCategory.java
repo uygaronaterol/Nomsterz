@@ -14,7 +14,6 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.items.SlotItemHandler;
 
 public class NomsterCraftingTableRecipeCategory implements IRecipeCategory<NomsterCraftingTableRecipe> {
     public final static ResourceLocation UID = new ResourceLocation(Nomsterz.MOD_ID, "nomster_crafting");

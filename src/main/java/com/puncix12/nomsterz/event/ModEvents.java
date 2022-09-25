@@ -8,7 +8,6 @@ import com.puncix12.nomsterz.entity.custom.NyangaEntity;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -31,9 +30,33 @@ public class ModEvents {
                 ItemStack stack = new ItemStack(ModItems.DHIRTA_SEED.get(), 1);
                 int villagerLevel = 1;
 
-                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 25),
                         stack, 10, 2, 0.02F));
+
+
+                ItemStack stack1 = new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 1);
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_SWERDARM_MEAT.get(), 1),
+                        stack1, 10, 2, 0.02F));
+
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_NYANGA_MEAT.get(), 2),
+                        stack1, 10, 2, 0.02F));
+
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_NATSHAI_MEAT.get(), 5),
+                        stack1, 10, 2, 0.02F));
+
+                ItemStack stack2 = new ItemStack(Items.EMERALD, 2);
+                ItemStack stack3 = new ItemStack(Items.EMERALD, 3);
+
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 35),
+                        stack2, 10, 5, 0.02F));
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 50),
+                        stack3, 10, 5, 0.02F));
             }
         }
     }

@@ -109,7 +109,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(ModItems.DHIRTA.get());
+        return pStack.getItem().equals(ModItems.COOKED_NYANGA_MEAT.get()) || pStack.getItem().equals(ModItems.RAW_NYANGA_MEAT.get());
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
@@ -146,7 +146,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
 
                     return interactionresult;
                 }
-                else if ( itemstack.is(Items.STICK)) {
+                else if ( itemstack.is(Items.ACACIA_SIGN)) {
                     InteractionResult interactionresult = super.mobInteract(p_30412_, p_30413_);
                     if ((!interactionresult.consumesAction() || this.isBaby()) && this.isOwnedBy(p_30412_)) {
                         itemstack.shrink(1);
@@ -160,7 +160,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
                     return interactionresult;
                 }
 
-            } else if (itemstack.is(ModItems.MEAT_PACKAGE.get()) && this.isBaby()) {
+            } else if ((itemstack.is(ModItems.COOKED_NATSHAI_MEAT.get()) || itemstack.is(ModItems.RAW_NATSHAI_MEAT.get())) && this.isBaby()) {
                 if (!p_30412_.getAbilities().instabuild) {
                     itemstack.shrink(1);
                 }

@@ -109,7 +109,7 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(ModItems.DHIRTA.get());
+        return pStack.getItem().equals(Items.COOKED_PORKCHOP) || pStack.getItem().equals(Items.PORKCHOP);
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {

@@ -1,7 +1,6 @@
 package com.puncix12.nomsterz.entity.client;
 
 import com.puncix12.nomsterz.Nomsterz;
-import com.puncix12.nomsterz.entity.custom.NatshaiEntity;
 import com.puncix12.nomsterz.entity.custom.SwerdarmEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;

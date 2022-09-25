@@ -1,6 +1,5 @@
 package com.puncix12.nomsterz.block.entity;
 
-import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.recipe.NomsterCraftingTableRecipe;
 import com.puncix12.nomsterz.screen.NomsterCraftingTableMenu;
 import net.minecraft.core.BlockPos;
@@ -16,9 +15,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.CraftingTableBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -28,7 +25,6 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.plaf.basic.BasicComboBoxUI;
 import java.util.Optional;
 
 public class NomsterCraftingTableBlockEntity extends BlockEntity implements MenuProvider {
