@@ -33,7 +33,7 @@ public class ModEvents {
 
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 25),
-                        stack, 10, 8, 0.02F));
+                        stack, 10, 2, 0.02F));
             }
         }
     }
