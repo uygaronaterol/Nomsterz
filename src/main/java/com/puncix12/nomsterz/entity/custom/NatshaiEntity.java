@@ -1,10 +1,13 @@
 package com.puncix12.nomsterz.entity.custom;
 
+import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.ModItems;
+import com.puncix12.nomsterz.sound.ModSounds;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -20,7 +23,6 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraftforge.fluids.FluidType;
-import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
@@ -69,24 +71,54 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
     public static AttributeSupplier setAttributes() {
         return TamableAnimal.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.ATTACK_DAMAGE, 3.5f)
+                .add(Attributes.ATTACK_DAMAGE, 5f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.665f)
                 .add(Attributes.FOLLOW_RANGE, 20000f).build();
     }
 
+    @Override
+    protected void registerGoals() {
+        this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal( 1, new SitWhenOrderedToGoal(this));
+        this.goalSelector.addGoal( 2, new BreedGoal(this, 1.0D));
+
+        this.goalSelector.addGoal( 4, new FollowOwnerGoal(this, 0.7,2,100,false));
+        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 0.6D, false));
+        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.6D));
+        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+        this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
+        this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, true));
+        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
+        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
+        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
+        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, NyangaEntity.class, true));
+        this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Cow.class, true));
+        this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, Sheep.class, true));
+
+
+    }
 
 
     @Nullable
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel p_146743_, AgeableMob p_146744_) {
-        return null;
+    public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob mob) {
+        return ModEntityTypes.NATSHAI.get().create(serverLevel);
     }
 
+    @Override
+    public boolean isFood(ItemStack pStack) {
+        return pStack.getItem().equals(ModItems.DHIRTA.get());
+    }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
         ItemStack itemstack = p_30412_.getItemInHand(p_30413_);
         Item item = itemstack.getItem();
+        if(isFood(itemstack)){
+            return super.mobInteract(p_30412_,p_30413_);
+        }
+
         if (this.level.isClientSide) {
             boolean flag = this.isOwnedBy(p_30412_) || this.isTame() || itemstack.is(Items.BONE) && !this.isTame();
             return flag ? InteractionResult.CONSUME : InteractionResult.PASS;
@@ -150,22 +182,6 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
         }
     }
 
-    @Override
-    protected void registerGoals() {
-        this.goalSelector.addGoal(1, new FloatGoal(this));
-        this.goalSelector.addGoal( 1, new SitWhenOrderedToGoal(this));
-
-        this.goalSelector.addGoal( 2, new FollowOwnerGoal(this, 0.7,2,100,false));
-        this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 0.6D, false));
-        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 0.6D));
-        this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-        this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
-        this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
-        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, true));
-        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
-        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
-    }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
@@ -228,5 +244,21 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
     public AnimationFactory getFactory() {
         return factory;
     }
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.NATSHAI_IDLE.get();
+    }
 
+    @Nullable
+    @Override
+    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+        return ModSounds.NATSHAI_HIT.get();
+    }
+
+    @Nullable
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.NATSHAI_DEATH.get();
+    }
 }

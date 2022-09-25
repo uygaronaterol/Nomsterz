@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "minecraft:beef"},
+    {"item": "minecraft:porkchop"},
+    {"item": "minecraft:string"},
+    {"item": "minecraft:chicken"},
+    {"item": "minecraft:mutton"},
+    {"item": "minecraft:string"},
+    {"item": "minecraft:string"},
+    {"item": "minecraft:string"},
+    {"item": "minecraft:acacia_slab"}
+  ],
+  "output": {
+    "item": "nomsterz:meat_package",
+    "count": 4
+  }
+}

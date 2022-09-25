@@ -25,6 +25,10 @@ public class NatshaiRenderer extends GeoEntityRenderer<NatshaiEntity> {
 
     @Override
     public RenderType getRenderType(NatshaiEntity animatable, float partialTicks, PoseStack stack, @Nullable MultiBufferSource renderTypeBuffer, @Nullable VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
+        if(animatable.isBaby())
+            stack.scale(0.4f,0.4f,0.4f);
+        else
+            stack.scale(1f,1f,1f);
         return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
     }
 }

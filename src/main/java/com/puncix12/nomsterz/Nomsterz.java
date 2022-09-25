@@ -2,14 +2,20 @@ package com.puncix12.nomsterz;
 
 import com.mojang.logging.LogUtils;
 import com.puncix12.nomsterz.block.ModBlocks;
+import com.puncix12.nomsterz.block.entity.ModBlockEntities;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.entity.client.NatshaiRenderer;
-import com.puncix12.nomsterz.entity.custom.NatshaiEntity;
+import com.puncix12.nomsterz.entity.client.NyangaRenderer;
+import com.puncix12.nomsterz.entity.client.SwerdarmRenderer;
 import com.puncix12.nomsterz.item.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import com.puncix12.nomsterz.recipe.ModRecipes;
+import com.puncix12.nomsterz.screen.ModMenuTypes;
+import com.puncix12.nomsterz.screen.NomsterCraftingTableScreen;
+import com.puncix12.nomsterz.sound.ModSounds;
+import com.puncix12.nomsterz.villager.ModVillagers;
+import com.puncix12.nomsterz.world.biome.modifier.ModBiomeModifier;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,7 +23,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -32,7 +37,14 @@ public class Nomsterz
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModVillagers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModEntityTypes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
+        ModSounds.register(modEventBus);
+        ModBiomeModifier.register(modEventBus);
+
         GeckoLib.initialize();
         modEventBus.addListener(this::commonSetup);
 
@@ -41,9 +53,9 @@ public class Nomsterz
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+        event.enqueueWork(() -> {
+                ModVillagers.registerPOIs();
+        });
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -53,8 +65,12 @@ public class Nomsterz
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.DHIRTA_CROP.get(), RenderType.cutout());
             EntityRenderers.register(ModEntityTypes.NATSHAI.get(), NatshaiRenderer::new);
+            EntityRenderers.register(ModEntityTypes.NYANGA.get(), NyangaRenderer::new);
+            EntityRenderers.register(ModEntityTypes.SWERDARM.get(), SwerdarmRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);
+
         }
     }
 }

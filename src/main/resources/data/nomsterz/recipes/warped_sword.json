@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "nomsterz:swerdarm_sword"},
+    {"item": "nomsterz:natshai_skin"},
+    {"item": "nomsterz:nyanga_antler"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"}
+  ],
+  "output": {
+    "item": "minecraft:skeleton_skull",
+    "count": 1
+  }
+}

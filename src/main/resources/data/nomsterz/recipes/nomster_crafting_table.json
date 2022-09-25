@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "D": {
+      "item": "minecraft:brewing_stand"
+    },
+    "O": {
+      "item": "nomsterz:natshai_skin"
+    },
+    "S": {
+      "item": "minecraft:crafting_table"
+    },
+    "Z": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "GOD",
+    " S ",
+    "Z Z"
+  ],
+  "result": {
+    "item": "nomsterz:nomster_crafting_table"
+  }
+}

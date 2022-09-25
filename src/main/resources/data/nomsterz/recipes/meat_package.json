@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "G": {
-      "item": "minecraft:raw_beef"
+      "item": "minecraft:beef"
     },
     "D": {
-      "item": "minecraft:raw_porkchop"
+      "item": "minecraft:porkchop"
     },
     "O": {
-      "item": "minecraft:raw_chicken"
+      "item": "minecraft:chicken"
     },
     "S": {
-      "item": "minecraft:raw_mutton"
+      "item": "minecraft:mutton"
     },
     "Z": {
       "item": "minecraft:string"

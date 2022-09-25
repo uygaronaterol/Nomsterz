@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_snowy",
+  "entity": {
+    "type": "nomsterz:nyanga",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

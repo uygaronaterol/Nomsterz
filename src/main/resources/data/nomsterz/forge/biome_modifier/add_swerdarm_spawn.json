@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_plains",
+  "entity": {
+    "type": "nomsterz:swerdarm",
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

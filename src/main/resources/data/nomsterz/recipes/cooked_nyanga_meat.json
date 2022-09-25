@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 330,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "nomsterz:raw_nyanga_meat"
+  },
+  "result": "nomsterz:cooked_nyanga_meat"
+}

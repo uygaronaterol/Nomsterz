@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nomsterz:block/nomster_crafting_table"
+    },
+    "facing=south": {
+      "model": "nomsterz:block/nomster_crafting_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nomsterz:block/nomster_crafting_table",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "nomsterz:block/nomster_crafting_table",
+      "y": 90
+    }
+  }
+}

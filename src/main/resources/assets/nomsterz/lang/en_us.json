@@ -3,11 +3,37 @@
   "itemGroup.nomster_tab": "Nomster Tab",
   "block.nomsterz.skin_block": "Skin Block",
   "entity.nomsterz.natshai": "Natshai",
+  "entity.nomsterz.swerdarm": "Swerdarm",
+
+
   "item.nomsterz.natshai_spawn_egg": "Natshai Spawn Egg",
   "item.nomsterz.nomster_commander": "Nomster Commander",
   "item.nomsterz.raw_natshai_meat": "Raw Natshai Meat",
   "item.nomsterz.cooked_natshai_meat": "Cooked Natshai Meat",
   "item.nomsterz.dhirta": "Dhirta",
+  "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
   "item.nomsterz.dhirta_seed": "Dhirta Seed",
-  "block.nomsterz.dhirta_crop": "Dhirta Crop"
+  "block.nomsterz.dhirta_crop": "Dhirta Crop",
+  "entity.nomsterz.nyanga": "Nyanga",
+  "item.nomsterz.nyanga_spawn_egg": "Nyanga Spawn Egg",
+  "item.nomsterz.swerdarm_spawn_egg": "Swerdarm Spawn Egg",
+
+  "item.nomsterz.nomster_essence": "Nomster Essence",
+  "block.nomsterz.nomster_crafting_table": "Nomster Crafting Table",
+  "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
+  "item.nomsterz.nyanga_antler": "Nyanga Antler",
+  "item.nomsterz.raw_nyanga_meat": "Raw Nyanga Meat",
+  "item.nomsterz.cooked_nyanga_meat": "Cooked Nyanga Meat",
+  "item.nomsterz.meat_package": "MeatPackage",
+  "item.nomsterz.warped_sword": "Warped Sword",
+
+
+  "sounds.nomsterz.nyanga_idle": "Nyanga Idle",
+  "sounds.nomsterz.nyanga_idle2": "Nyanga Idle 2",
+  "sounds.nomsterz.nyanga_hit": "Nyanga Hit",
+  "sounds.nomsterz.nyanga_death": "Nyanga Death",
+  "sounds.nomsterz.natshai_idle": "Natshai Idle",
+  "sounds.nomsterz.natshai_hit": "Natshai Hit",
+  "sounds.nomsterz.natshai_death": "Natshai Death"
+
 }

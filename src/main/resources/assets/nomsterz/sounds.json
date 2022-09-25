@@ -1,0 +1,62 @@
+{
+  "nyanga_idle": {
+    "subtitle": "sounds.nomsterz.nyanga_idle",
+    "sounds": [
+      "nomsterz:nyanga_idle"
+    ]
+  },
+  "nyanga_idle2": {
+    "subtitle": "nomsterz.nyanga_idle2",
+    "sounds": [
+      "nomsterz:nyanga_idle2"
+    ]
+  },
+  "nyanga_hit": {
+    "subtitle": "nomsterz.nyanga_hit",
+    "sounds": [
+      "nomsterz:nyanga_hit"
+    ]
+  },
+  "nyanga_death": {
+    "subtitle": "nomsterz.nyanga_death",
+    "sounds": [
+      "nomsterz:nyanga_death"
+    ]
+  },
+  "natshai_idle": {
+    "subtitle": "nomsterz.natshai_idle",
+    "sounds": [
+      "nomsterz:natshai_idle"
+    ]
+  },
+  "natshai_hit": {
+    "subtitle": "nomsterz.natshai_hit",
+    "sounds": [
+      "nomsterz:natshai_hit"
+    ]
+  },
+  "natshai_death": {
+    "subtitle": "nomsterz.natshai_death",
+    "sounds": [
+      "nomsterz:natshai_death"
+    ]
+  },
+  "swerdarm_idle": {
+    "subtitle": "nomsterz.swerdarm_idle",
+    "sounds": [
+      "nomsterz:swerdarm_idle"
+    ]
+  },
+  "swerdarm_hit": {
+    "subtitle": "nomsterz.swerdarm_hit",
+    "sounds": [
+      "nomsterz:swerdarm_hit"
+    ]
+  },
+  "swerdarm_death": {
+    "subtitle": "nomsterz.swerdarm_death",
+    "sounds": [
+      "nomsterz:swerdarm_death"
+    ]
+  }
+}
