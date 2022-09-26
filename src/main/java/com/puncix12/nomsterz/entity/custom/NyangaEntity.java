@@ -142,7 +142,7 @@ public class NyangaEntity extends TamableAnimal implements IAnimatable, PlayerRi
 
                     return interactionresult;
                 }
-                else if(itemstack.isEmpty()) {
+                else if(itemstack.isEmpty() && !this.isInSittingPose()) {
                     this.doPlayerRide(p_30412_);
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
 

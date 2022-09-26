@@ -5,6 +5,7 @@ import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.sound.ModSounds;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
@@ -22,6 +23,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fluids.FluidType;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.AnimationState;
@@ -33,12 +35,15 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
+public class SwerdarmEntity extends TamableAnimal implements IAnimatable, PlayerRideableJumping {
     private AnimationFactory factory = new AnimationFactory(this);
     public SwerdarmEntity(EntityType<? extends TamableAnimal> p_27557_, Level p_27558_) {
         super(p_27557_, p_27558_);
-
+        this.maxUpStep = 1.0F;
     }
+    protected float playerJumpPendingScale;
+    private boolean allowStandSliding;
+    protected boolean isJumping;
 
     @Override
     public boolean canDrownInFluidType(FluidType type) {
@@ -65,7 +70,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
         return false;
     }
     public int getExperienceReward() {
-        return 4 + this.level.random.nextInt(5);
+        return 10 + this.level.random.nextInt(5);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -74,6 +79,8 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
                 .add(Attributes.ATTACK_DAMAGE, 10f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.465f)
+                .add(Attributes.JUMP_STRENGTH, 0.5f)
+                .add(Attributes.ARMOR, 0.5f)
                 .add(Attributes.FOLLOW_RANGE, 20000f).build();
     }
 
@@ -159,7 +166,11 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
 
                     return interactionresult;
                 }
+                else if(itemstack.isEmpty() && !this.isInSittingPose()) {
+                    this.doPlayerRide(p_30412_);
+                    return InteractionResult.sidedSuccess(this.level.isClientSide);
 
+                }
             } else if ((itemstack.is(ModItems.COOKED_NATSHAI_MEAT.get()) || itemstack.is(ModItems.RAW_NATSHAI_MEAT.get())) && this.isBaby()) {
                 if (!p_30412_.getAbilities().instabuild) {
                     itemstack.shrink(1);
@@ -261,4 +272,141 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable {
     protected SoundEvent getDeathSound() {
         return ModSounds.SWERDARM_DEATH.get();
     }
+    protected void doPlayerRide(Player p_30634_) {
+        if (!this.level.isClientSide) {
+            p_30634_.setYRot(this.getYRot());
+            p_30634_.setXRot(this.getXRot());
+            p_30634_.startRiding(this);
+        }
+
+    }
+    @javax.annotation.Nullable
+    public LivingEntity getControllingPassenger() {
+        Entity entity = this.getFirstPassenger();
+        if (entity instanceof LivingEntity) {
+            return (LivingEntity)entity;
+        }
+        return null;
+    }
+    @Override
+    public void positionRider(Entity p_20312_) {
+        this.positionRider(p_20312_, Entity::setPos);
+    }
+
+    private void positionRider(Entity p_19957_, Entity.MoveFunction p_19958_) {
+        super.positionRider(p_19957_);
+        float f = Mth.sin(this.yBodyRot * ((float)Math.PI / 180F));
+        float f1 = Mth.cos(this.yBodyRot * ((float)Math.PI / 180F));
+        p_19957_.setPos(this.getX() - (double)(1.3F * f),
+                this.getY(0.5D) + p_19957_.getMyRidingOffset() + 1.45D,
+                this.getZ() + (double)(1.3F * f1));
+        if (p_19957_ instanceof LivingEntity) {
+            ((LivingEntity)p_19957_).yBodyRot = this.yBodyRot;
+        }
+    }
+
+
+    @Override
+    public void travel(Vec3 p_30633_) {
+        if (this.isAlive()) {
+            LivingEntity livingentity =  this.getControllingPassenger();
+            if (this.isVehicle()) {
+                this.setYRot(livingentity.getYRot());
+                this.yRotO = this.getYRot();
+                this.setXRot(livingentity.getXRot() * 0.5F);
+                this.setRot(this.getYRot(), this.getXRot());
+                this.yBodyRot = this.getYRot();
+                this.yHeadRot = this.yBodyRot;
+                float f = livingentity.xxa * 0.5F;
+                float f1 = livingentity.zza;
+                if (f1 <= 0.0F) {
+                    f1 *= 0.25F;
+                }
+
+                if (this.onGround && this.playerJumpPendingScale == 0.0F && !this.allowStandSliding) {
+                    f = 0.0F;
+                    f1 = 0.0F;
+                }
+
+                if (this.playerJumpPendingScale > 0.0F && !this.isJumping() && this.onGround) {
+                    double d0 = this.getCustomJump() * (double)this.playerJumpPendingScale * (double)this.getBlockJumpFactor();
+                    double d1 = d0 + this.getJumpBoostPower();
+                    Vec3 vec3 = this.getDeltaMovement();
+                    this.setDeltaMovement(vec3.x, d1, vec3.z);
+                    this.setIsJumping(true);
+                    this.hasImpulse = true;
+                    net.minecraftforge.common.ForgeHooks.onLivingJump(this);
+                    if (f1 > 0.0F) {
+                        float f2 = Mth.sin(this.getYRot() * ((float)Math.PI / 180F));
+                        float f3 = Mth.cos(this.getYRot() * ((float)Math.PI / 180F));
+                        this.setDeltaMovement(this.getDeltaMovement().add((double)(-0.4F * f2 * this.playerJumpPendingScale), 0.0D, (double)(0.4F * f3 * this.playerJumpPendingScale)));
+                    }
+
+                    this.playerJumpPendingScale = 0.0F;
+                }
+
+                this.flyingSpeed = this.getSpeed() * 0.1F;
+                if (this.isControlledByLocalInstance()) {
+                    this.setSpeed((float)this.getAttributeValue(Attributes.MOVEMENT_SPEED));
+                    super.travel(new Vec3((double)f, p_30633_.y, (double)f1));
+                } else if (livingentity instanceof Player) {
+                    this.setDeltaMovement(Vec3.ZERO);
+                }
+
+                if (this.onGround) {
+                    this.playerJumpPendingScale = 0.0F;
+                    this.setIsJumping(false);
+                }
+
+                this.calculateEntityAnimation(this, false);
+                this.tryCheckInsideBlocks();
+            } else {
+                this.flyingSpeed = 0.02F;
+                super.travel(p_30633_);
+            }
+        }
+    }
+    public void onPlayerJump(int p_30591_) {
+
+        if (p_30591_ < 0) {
+            p_30591_ = 0;
+        } else {
+            this.allowStandSliding = true;
+        }
+
+        if (p_30591_ >= 90) {
+            this.playerJumpPendingScale = 1.0F;
+        } else {
+            this.playerJumpPendingScale = 0.4F + 0.4F * (float)p_30591_ / 90.0F;
+        }
+    }
+
+    @Override
+    public boolean canJump() {
+        return true;
+    }
+    public boolean isJumping() {
+        return this.isJumping;
+    }
+
+    @Override
+    public void handleStartJump(int p_21695_) {
+        this.allowStandSliding = true;
+        this.playJumpSound();
+    }
+    public void playJumpSound(){
+
+    }
+
+    @Override
+    public void handleStopJump() {}
+
+    public void setIsJumping(boolean p_30656_) {
+        this.isJumping = p_30656_;
+    }
+
+    public double getCustomJump() {
+        return this.getAttributeValue(Attributes.JUMP_STRENGTH);
+    }
+
 }
