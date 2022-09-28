@@ -26,6 +26,12 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> SWERDARM_SWORD_PIECE = ITEMS.register("swerdarm_sword_piece",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> GHOGA_SPIT = ITEMS.register("ghoga_spit",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> PELLATT_BEAK = ITEMS.register("pellatt_beak",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> YONSI_CLAW = ITEMS.register("yonsi_claw",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Spawn Eggs
     public static final RegistryObject<Item> NATSHAI_SPAWN_EGG = ITEMS.register("natshai_spawn_egg",
@@ -36,6 +42,15 @@ public class ModItems {
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> SWERDARM_SPAWN_EGG = ITEMS.register("swerdarm_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.SWERDARM,0x647725,0x9cb841
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> PELLATT_SPAWN_EGG = ITEMS.register("pellatt_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.PELLATT,0x711f5d,0x98297d
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> GHOGA_SPAWN_EGG = ITEMS.register("ghoga_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.GHOGA,0x6c5e44,0xb8ac8e
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> YONSI_SPAWN_EGG = ITEMS.register("yonsi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.YONSI,0x065f1b,0x0a7c25
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Nomster items
@@ -58,6 +73,18 @@ public class ModItems {
             () -> new RawSwerdarmMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_SWERDARM_MEAT)));
     public static final RegistryObject<Item> COOKED_SWERDARM_MEAT = ITEMS.register("cooked_swerdarm_meat",
             () -> new CookedSwerdarmMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_SWERDARM_MEAT)));
+    public static final RegistryObject<Item> RAW_GHOGA_MEAT = ITEMS.register("raw_ghoga_meat",
+            () -> new RawGhogaItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_GHOGA_MEAT)));
+    public static final RegistryObject<Item> COOKED_GHOGA_MEAT = ITEMS.register("cooked_ghoga_meat",
+            () -> new CookedGhogaItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_GHOGA_MEAT)));
+    public static final RegistryObject<Item> RAW_YONSI_MEAT = ITEMS.register("raw_yonsi_meat",
+            () -> new RawYonsiItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_YONSI_MEAT)));
+    public static final RegistryObject<Item> COOKED_YONSI_MEAT = ITEMS.register("cooked_yonsi_meat",
+            () -> new CookedYonsiItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_YONSI_MEAT)));
+    public static final RegistryObject<Item> RAW_PELLATT_MEAT = ITEMS.register("raw_pellatt_meat",
+            () -> new RawPellattItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_PELLATT_MEAT)));
+    public static final RegistryObject<Item> COOKED_PELLATT_MEAT = ITEMS.register("cooked_pellatt_meat",
+            () -> new CookedPellattItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_PELLATT_MEAT)));
 
 
     //Nomster foods
@@ -69,6 +96,8 @@ public class ModItems {
     //Crop
     public static final RegistryObject<Item> DHIRTA_SEED = ITEMS.register("dhirta_seed",
             () -> new ItemNameBlockItem(ModBlocks.DHIRTA_CROP.get(),new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+
+
 
     public static void register(IEventBus bus){
         ITEMS.register(bus);

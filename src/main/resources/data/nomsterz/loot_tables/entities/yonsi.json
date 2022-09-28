@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nomsterz:yonsi_claw"
+        }
+      ]},{
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nomsterz:raw_yonsi_meat"
+        }
+      ]
+    }
+  ,{
+      "rolls": {
+        "min": 5,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nomsterz:nomster_essence"
+        }
+      ]
+    }
+  ]
+}

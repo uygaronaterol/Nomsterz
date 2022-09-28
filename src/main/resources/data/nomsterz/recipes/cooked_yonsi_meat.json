@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "nomsterz:raw_yonsi_meat"
+  },
+  "result": "nomsterz:cooked_yonsi_meat"
+}

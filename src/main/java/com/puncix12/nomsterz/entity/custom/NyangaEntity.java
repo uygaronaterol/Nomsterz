@@ -144,6 +144,9 @@ public class NyangaEntity extends TamableAnimal implements IAnimatable, PlayerRi
                 }
                 else if(itemstack.isEmpty() && !this.isInSittingPose()) {
                     this.doPlayerRide(p_30412_);
+                    if(this.isInWater()){
+                        this.setOrderedToSit(false);
+                    }
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
 
                 }
@@ -249,7 +252,7 @@ public class NyangaEntity extends TamableAnimal implements IAnimatable, PlayerRi
         float f = Mth.sin(this.yBodyRot * ((float)Math.PI / 180F));
         float f1 = Mth.cos(this.yBodyRot * ((float)Math.PI / 180F));
         p_19957_.setPos(this.getX() - (double)(3F * f),
-                this.getY(0.5D) + p_19957_.getMyRidingOffset() + 1.45D,
+                this.getY(0.5D) + p_19957_.getMyRidingOffset() + 1D,
                 this.getZ() + (double)(3F * f1));
         if (p_19957_ instanceof LivingEntity) {
             ((LivingEntity)p_19957_).yBodyRot = this.yBodyRot;

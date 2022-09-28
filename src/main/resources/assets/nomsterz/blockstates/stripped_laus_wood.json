@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nomsterz:block/stripped_laus_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nomsterz:block/stripped_laus_wood"
+    },
+    "axis=z": {
+      "model": "nomsterz:block/stripped_laus_wood_horizontal",
+      "x": 90
+    }
+  }
+}

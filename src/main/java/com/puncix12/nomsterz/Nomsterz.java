@@ -4,9 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.block.entity.ModBlockEntities;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
-import com.puncix12.nomsterz.entity.client.NatshaiRenderer;
-import com.puncix12.nomsterz.entity.client.NyangaRenderer;
-import com.puncix12.nomsterz.entity.client.SwerdarmRenderer;
+import com.puncix12.nomsterz.entity.client.*;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.recipe.ModRecipes;
 import com.puncix12.nomsterz.screen.ModMenuTypes;
@@ -14,6 +12,7 @@ import com.puncix12.nomsterz.screen.NomsterCraftingTableScreen;
 import com.puncix12.nomsterz.sound.ModSounds;
 import com.puncix12.nomsterz.villager.ModVillagers;
 import com.puncix12.nomsterz.world.biome.modifier.ModBiomeModifier;
+import com.puncix12.nomsterz.world.feature.ModConfiguredFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
@@ -44,7 +43,7 @@ public class Nomsterz
         ModRecipes.register(modEventBus);
         ModSounds.register(modEventBus);
         ModBiomeModifier.register(modEventBus);
-
+        ModConfiguredFeatures.register(modEventBus);
         GeckoLib.initialize();
         modEventBus.addListener(this::commonSetup);
 
@@ -68,6 +67,12 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.NATSHAI.get(), NatshaiRenderer::new);
             EntityRenderers.register(ModEntityTypes.NYANGA.get(), NyangaRenderer::new);
             EntityRenderers.register(ModEntityTypes.SWERDARM.get(), SwerdarmRenderer::new);
+            EntityRenderers.register(ModEntityTypes.PELLATT.get(), PellattRenderer::new);
+            EntityRenderers.register(ModEntityTypes.GHOGA.get(), GhogaRenderer::new);
+            EntityRenderers.register(ModEntityTypes.YONSI.get(), YonsiRenderer::new);
+
+            EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
+
 
             MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);
 

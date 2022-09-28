@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_hot/overworld",
+  "entity": {
+    "type": "nomsterz:pellatt",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 5
+  }
+}

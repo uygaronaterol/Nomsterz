@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nomsterz:block/laus_log",
+    "side": "nomsterz:block/laus_log"
+  }
+}

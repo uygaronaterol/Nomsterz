@@ -168,6 +168,9 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable, Player
                 }
                 else if(itemstack.isEmpty() && !this.isInSittingPose()) {
                     this.doPlayerRide(p_30412_);
+                    if(this.isInWater()){
+                        this.setOrderedToSit(false);
+                    }
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
 
                 }

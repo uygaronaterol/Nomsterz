@@ -3,8 +3,7 @@ package com.puncix12.nomsterz.event;
 
 import com.puncix12.nomsterz.Nomsterz;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
-import com.puncix12.nomsterz.entity.custom.NatshaiEntity;
-import com.puncix12.nomsterz.entity.custom.NyangaEntity;
+import com.puncix12.nomsterz.entity.custom.*;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -47,7 +46,15 @@ public class ModEvents {
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.COOKED_NATSHAI_MEAT.get(), 5),
                         stack1, 10, 2, 0.02F));
-
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_GHOGA_MEAT.get(), 4),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_YONSI_MEAT.get(), 2),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_PELLATT_MEAT.get(), 4),
+                        stack1, 10, 2, 0.02F));
                 ItemStack stack2 = new ItemStack(Items.EMERALD, 2);
                 ItemStack stack3 = new ItemStack(Items.EMERALD, 3);
 
@@ -67,7 +74,10 @@ public class ModEvents {
         public static void entityAttributeEvent(EntityAttributeCreationEvent event){
             event.put(ModEntityTypes.NATSHAI.get(), NatshaiEntity.setAttributes());
             event.put(ModEntityTypes.NYANGA.get(), NyangaEntity.setAttributes());
-            event.put(ModEntityTypes.SWERDARM.get(), NyangaEntity.setAttributes());
+            event.put(ModEntityTypes.SWERDARM.get(), SwerdarmEntity.setAttributes());
+            event.put(ModEntityTypes.PELLATT.get(), PellattEntity.setAttributes());
+            event.put(ModEntityTypes.GHOGA.get(), GhogaEntity.setAttributes());
+            event.put(ModEntityTypes.YONSI.get(), YonsiEntity.setAttributes());
 
         }
     }

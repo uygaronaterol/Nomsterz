@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_swamp",
+  "entity": {
+    "type": "nomsterz:ghoga",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 5
+  }
+}

@@ -3,28 +3,56 @@
   "itemGroup.nomster_tab": "Nomster Tab",
   "entity.nomsterz.natshai": "Natshai",
   "entity.nomsterz.swerdarm": "Swerdarm",
+  "entity.nomsterz.pellatt": "Pellatt",
+  "entity.nomsterz.ghoga": "Ghoga",
+  "entity.nomsterz.yonsi": "Yonsi",
+  "entity.nomsterz.nyanga": "Nyanga",
 
 
-  "item.nomsterz.natshai_spawn_egg": "Natshai Spawn Egg",
+
   "item.nomsterz.nomster_commander": "Nomster Commander",
   "item.nomsterz.raw_natshai_meat": "Raw Natshai Meat",
   "item.nomsterz.cooked_natshai_meat": "Cooked Natshai Meat",
   "item.nomsterz.cooked_swerdarm_meat": "Cooked Swerdarm Meat",
   "item.nomsterz.raw_swerdarm_meat": "Cooked Swerdarm Meat",
-  "item.nomsterz.dhirta": "Dhirta",
-  "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
-  "item.nomsterz.dhirta_seed": "Dhirta Seed",
-  "block.nomsterz.dhirta_crop": "Dhirta Crop",
-  "entity.nomsterz.nyanga": "Nyanga",
-  "item.nomsterz.nyanga_spawn_egg": "Nyanga Spawn Egg",
-  "item.nomsterz.swerdarm_spawn_egg": "Swerdarm Spawn Egg",
-
-  "item.nomsterz.nomster_essence": "Nomster Essence",
-  "block.nomsterz.nomster_crafting_table": "Nomster Crafting Table",
-  "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
-  "item.nomsterz.nyanga_antler": "Nyanga Antler",
   "item.nomsterz.raw_nyanga_meat": "Raw Nyanga Meat",
   "item.nomsterz.cooked_nyanga_meat": "Cooked Nyanga Meat",
+  "item.nomsterz.raw_ghoga_meat": "Raw Ghoga Meat",
+  "item.nomsterz.cooked_ghoga_meat": "Cooked Ghoga Meat",
+  "item.nomsterz.raw_yonsi_meat": "Raw Yonsi Meat",
+  "item.nomsterz.cooked_yonsi_meat": "Cooked Yonsi Meat",
+  "item.nomsterz.raw_pellatt_meat": "Raw Pellatt Meat",
+  "item.nomsterz.cooked_pellatt_meat": "Cooked Pellatt Meat",
+
+
+  "item.nomsterz.dhirta": "Dhirta",
+  "item.nomsterz.ghoga_spit": "Ghoga Spit",
+  "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
+  "item.nomsterz.dhirta_seed": "Dhirta Seed",
+
+  "block.nomsterz.dhirta_crop": "Dhirta Crop",
+  "block.nomsterz.nomster_crafting_table": "Nomster Crafting Table",
+  "block.nomsterz.laus_leaves": "Laus Leaves",
+  "block.nomsterz.laus_log": "Laus Log",
+  "block.nomsterz.laus_planks": "Laus Planks",
+  "block.nomsterz.laus_sapling": "Laus Sapling",
+  "block.nomsterz.laus_wood": "Laus Wood",
+  "block.nomsterz.stripped_laus_log": "Stripped Laus log",
+  "block.nomsterz.stripped_laus_wood": "Stripped Laus Wood",
+
+
+
+  "item.nomsterz.nyanga_spawn_egg": "Nyanga Spawn Egg",
+  "item.nomsterz.swerdarm_spawn_egg": "Swerdarm Spawn Egg",
+  "item.nomsterz.pellatt_spawn_egg": "Pellatt Spawn Egg",
+  "item.nomsterz.ghoga_spawn_egg": "Ghoga Spawn Egg",
+  "item.nomsterz.natshai_spawn_egg": "Natshai Spawn Egg",
+  "item.nomsterz.yonsi_spawn_egg": "Yonsi Spawn Egg",
+
+  "item.nomsterz.nomster_essence": "Nomster Essence",
+  "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
+  "item.nomsterz.nyanga_antler": "Nyanga Antler",
+
   "item.nomsterz.meat_package": "MeatPackage",
   "item.nomsterz.warped_sword": "Warped Sword",
 
