@@ -58,5 +58,71 @@
     "sounds": [
       "nomsterz:swerdarm_death"
     ]
+  },
+  "ghoga_idle": {
+    "subtitle": "nomsterz.ghoga_idle",
+    "sounds": [
+      "nomsterz:ghoga_idle"
+    ]
+  },
+  "ghoga_hit": {
+    "subtitle": "nomsterz.ghoga_hit",
+    "sounds": [
+      "nomsterz:ghoga_hit"
+    ]
+  },
+  "ghoga_death": {
+    "subtitle": "nomsterz.ghoga_death",
+    "sounds": [
+      "nomsterz:ghoga_death"
+    ]
+  },
+  "pellatt_idle": {
+    "subtitle": "nomsterz.pellatt_idle",
+    "sounds": [
+      "nomsterz:pellatt_idle"
+    ]
+  },
+  "pellatt_hit": {
+    "subtitle": "nomsterz.pellatt_hit",
+    "sounds": [
+      "nomsterz:pellatt_hit"
+    ]
+  },
+  "pellatt_death": {
+    "subtitle": "nomsterz.pellatt_death",
+    "sounds": [
+      "nomsterz:pellatt_death"
+    ]
+  },
+  "pellatt_attack": {
+    "subtitle": "nomsterz.pellatt_attack",
+    "sounds": [
+      "nomsterz:pellatt_attack"
+    ]
+  },
+  "yonsi_hit": {
+    "subtitle": "nomsterz.yonsi_hit",
+    "sounds": [
+      "nomsterz:yonsi_hit"
+    ]
+  },
+  "yonsi_death": {
+    "subtitle": "nomsterz.yonsi_death",
+    "sounds": [
+      "nomsterz:yonsi_death"
+    ]
+  },
+  "yonsi_idle": {
+    "subtitle": "nomsterz.yonsi_idle",
+    "sounds": [
+      "nomsterz:yonsi_idle"
+    ]
+  },
+  "yonsi_attack": {
+    "subtitle": "nomsterz.yonsi_attack",
+    "sounds": [
+      "nomsterz:yonsi_attack"
+    ]
   }
 }
