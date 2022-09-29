@@ -179,7 +179,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable, Player
                     itemstack.shrink(1);
                 }
 
-                if (this.random.nextInt(7) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
+                if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
                     this.tame(p_30412_);
                     this.navigation.stop();
                     this.setTarget((LivingEntity)null);
@@ -239,6 +239,7 @@ public class SwerdarmEntity extends TamableAnimal implements IAnimatable, Player
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.swerdarm.attack", false));
+            playSound(ModSounds.SWERDARM_HIT.get());
             this.swinging = false;
         }
         return PlayState.CONTINUE;

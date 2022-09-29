@@ -1,5 +1,6 @@
 package com.puncix12.nomsterz.entity.custom;
 
+import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.sound.ModSounds;
@@ -164,7 +165,7 @@ public class PellattEntity extends TamableAnimal implements IAnimatable, PlayerR
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
                 }
 
-            } else if ( (itemstack.is(ModItems.DHIRTA.get()) || itemstack.is(ModItems.MEAT_PACKAGE.get()))&& this.getHealth() < 10) {
+            } else if ( (itemstack.is(ModBlocks.LAUS_SAPLING.get().asItem()) || itemstack.is(ModItems.MEAT_PACKAGE.get()))&& this.getHealth() < 10) {
                 if (!p_30412_.getAbilities().instabuild) {
                     itemstack.shrink(1);
                 }
@@ -240,7 +241,7 @@ public class PellattEntity extends TamableAnimal implements IAnimatable, PlayerR
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.pellatt.attack", false));
             this.swinging = false;
-            playSound(ModSounds.NYANGA_IDLE2.get());
+            playSound(ModSounds.PELLATT_ATTACK.get());
         }
         return PlayState.CONTINUE;
     }
@@ -395,20 +396,18 @@ public class PellattEntity extends TamableAnimal implements IAnimatable, PlayerR
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        if(Math.random() > 0.5)
-            return ModSounds.NYANGA_IDLE.get();
-        return ModSounds.NYANGA_IDLE2.get();
+        return ModSounds.PELLATT_IDLE.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.NYANGA_HIT.get();
+        return ModSounds.PELLATT_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.NYANGA_DEATH.get();
+        return ModSounds.PELLATT_DEATH.get();
     }
 }

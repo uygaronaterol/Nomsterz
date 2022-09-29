@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "minecraft:copper_block"},
+    {"item": "nomsterz:ghoga_spit"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "nomsterz:pellatt_beak"},
+    {"item": "nomsterz:iron_laus_ring"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "minecraft:glowstone"},
+    {"item": "minecraft:glow_ink_sac"}
+  ],
+  "output": {
+    "item": "nomsterz:ring_of_enlightenment",
+    "count": 1
+  }
+}

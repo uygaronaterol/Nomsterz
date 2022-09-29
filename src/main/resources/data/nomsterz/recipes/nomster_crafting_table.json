@@ -15,12 +15,15 @@
     },
     "Z": {
       "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "nomsterz:laus_wood"
     }
   },
   "pattern": [
     "GOD",
-    " S ",
-    "Z Z"
+    "BSB",
+    "ZBZ"
   ],
   "result": {
     "item": "nomsterz:nomster_crafting_table"

@@ -6,7 +6,7 @@
       "y": 90
     },
     "axis=y": {
-      "model": "nomsterz:block/laus_maple_log"
+      "model": "nomsterz:block/laus_log"
     },
     "axis=z": {
       "model": "nomsterz:block/laus_log_horizontal",

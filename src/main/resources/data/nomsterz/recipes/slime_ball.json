@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:ghoga_spit"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"}
+  ],
+  "output": {
+    "item": "minecraft:slime_ball",
+    "count": 1
+  }
+}

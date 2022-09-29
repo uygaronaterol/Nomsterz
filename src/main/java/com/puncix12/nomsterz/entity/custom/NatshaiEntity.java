@@ -40,6 +40,7 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
 
     }
 
+
     @Override
     public boolean canDrownInFluidType(FluidType type) {
         return false;
@@ -165,7 +166,7 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
                     itemstack.shrink(1);
                 }
 
-                if (this.random.nextInt(7) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
+                if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
                     this.tame(p_30412_);
                     this.navigation.stop();
                     this.setTarget((LivingEntity)null);
@@ -225,6 +226,7 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.natshai.attack", false));
+            playSound(ModSounds.NATSHAI_HIT.get());
             this.swinging = false;
         }
         return PlayState.CONTINUE;

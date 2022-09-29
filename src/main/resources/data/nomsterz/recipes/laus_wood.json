@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:laus_log"},
+    {"item": "nomsterz:laus_log"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "nomsterz:laus_log"},
+    {"item": "nomsterz:laus_log"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"},
+    {"item": "minecraft:acacia_slab"}
+  ],
+  "output": {
+    "item": "nomsterz:laus_wood",
+    "count": 3
+  }
+}

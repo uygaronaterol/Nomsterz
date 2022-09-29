@@ -2,6 +2,7 @@ package com.puncix12.nomsterz.event;
 
 
 import com.puncix12.nomsterz.Nomsterz;
+import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.entity.custom.*;
 import com.puncix12.nomsterz.item.ModItems;
@@ -42,7 +43,12 @@ public class ModEvents {
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.COOKED_NYANGA_MEAT.get(), 2),
                         stack1, 10, 2, 0.02F));
-
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_PELLATT_MEAT.get(), 4),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_YONSI_MEAT.get(), 3),
+                        stack1, 10, 2, 0.02F));
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.COOKED_NATSHAI_MEAT.get(), 5),
                         stack1, 10, 2, 0.02F));
@@ -55,6 +61,15 @@ public class ModEvents {
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.COOKED_PELLATT_MEAT.get(), 4),
                         stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModBlocks.LAUS_LOG.get(), 19),
+                        stack1, 10, 2, 0.02F));
+
+                ItemStack stack4 = new ItemStack(ModBlocks.LAUS_SAPLING.get().asItem(), 1);
+                trades.get(2).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 15),
+                        stack4, 10, 5, 0.02F));
+
                 ItemStack stack2 = new ItemStack(Items.EMERALD, 2);
                 ItemStack stack3 = new ItemStack(Items.EMERALD, 3);
 

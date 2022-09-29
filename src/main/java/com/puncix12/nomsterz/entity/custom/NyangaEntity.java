@@ -156,7 +156,7 @@ public class NyangaEntity extends TamableAnimal implements IAnimatable, PlayerRi
                     itemstack.shrink(1);
                 }
 
-                if (this.random.nextInt(7) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
+                if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
                     this.tame(p_30412_);
                     this.navigation.stop();
                     this.setTarget((LivingEntity)null);

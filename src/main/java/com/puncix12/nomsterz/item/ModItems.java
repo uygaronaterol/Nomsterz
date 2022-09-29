@@ -33,6 +33,9 @@ public class ModItems {
     public static final RegistryObject<Item> YONSI_CLAW = ITEMS.register("yonsi_claw",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
+    //Wood
+
+
     //Spawn Eggs
     public static final RegistryObject<Item> NATSHAI_SPAWN_EGG = ITEMS.register("natshai_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.NATSHAI,0x066606,0x0c400c
@@ -59,7 +62,16 @@ public class ModItems {
     public static final RegistryObject<Item> WARPED_SWORD = ITEMS.register("warped_sword",
             () -> new WarpedSwordItem(Tiers.NETHERITE, 6,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
-
+    public static final RegistryObject<Item> LAUS_RING = ITEMS.register("laus_ring",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(16)));
+    public static final RegistryObject<Item> IRON_LAUS_RING = ITEMS.register("iron_laus_ring",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(16)));
+    public static final RegistryObject<Item> RING_OF_RESISTANCE = ITEMS.register("ring_of_resistance",
+            () -> new RingOfResistanceItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> RING_OF_STRENGTH = ITEMS.register("ring_of_strength",
+            () -> new RingOfStrengthItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> RING_OF_ENLIGHTENMENT = ITEMS.register("ring_of_enlightenment",
+            () -> new RingOfEnlightenmentItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
     //Foods
     public static final RegistryObject<Item> RAW_NATSHAI_MEAT = ITEMS.register("raw_natshai_meat",
             () -> new RawNatshaiMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_NATSHAI_MEAT)));

@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "minecraft:copper_block"},
+    {"item": "nomsterz:yonsi_claw"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "nomsterz:nyanga_antler"},
+    {"item": "nomsterz:iron_laus_ring"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:diamond"}
+  ],
+  "output": {
+    "item": "nomsterz:ring_of_resistance",
+    "count": 1
+  }
+}

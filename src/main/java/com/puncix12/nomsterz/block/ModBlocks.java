@@ -69,8 +69,7 @@ public class ModBlocks {
                 }
             }, ModCreativeModeTab.NOMSTERZ_TAB);
     public static final RegistryObject<Block> LAUS_LEAVES = registerBlock("laus_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
-                    .requiresCorrectToolForDrops()){
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;

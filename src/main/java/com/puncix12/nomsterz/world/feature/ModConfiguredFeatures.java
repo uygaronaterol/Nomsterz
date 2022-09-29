@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,10 +34,10 @@ public class ModConfiguredFeatures {
             CONFIGURED_FEATURES.register("laus", () ->
                     new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                             BlockStateProvider.simple(ModBlocks.LAUS_LOG.get()),
-                            new StraightTrunkPlacer(10, 6, 19),
+                            new MegaJungleTrunkPlacer(12, 6, 15),
                             BlockStateProvider.simple(ModBlocks.LAUS_LEAVES.get()),
-                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
-                            new TwoLayersFeatureSize(1, 1, 2)).build()));
+                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
+                            new TwoLayersFeatureSize(1, 0, 1)).build()));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> LAUS_SPAWN =
             CONFIGURED_FEATURES.register("laus_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,

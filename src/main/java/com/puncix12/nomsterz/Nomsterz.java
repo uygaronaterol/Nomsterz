@@ -13,6 +13,7 @@ import com.puncix12.nomsterz.sound.ModSounds;
 import com.puncix12.nomsterz.villager.ModVillagers;
 import com.puncix12.nomsterz.world.biome.modifier.ModBiomeModifier;
 import com.puncix12.nomsterz.world.feature.ModConfiguredFeatures;
+import com.puncix12.nomsterz.world.feature.ModPlacedFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.common.MinecraftForge;
@@ -37,13 +38,14 @@ public class Nomsterz
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
         ModBlockEntities.register(modEventBus);
-        ModEntityTypes.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModSounds.register(modEventBus);
         ModBiomeModifier.register(modEventBus);
-        ModConfiguredFeatures.register(modEventBus);
         GeckoLib.initialize();
         modEventBus.addListener(this::commonSetup);
 

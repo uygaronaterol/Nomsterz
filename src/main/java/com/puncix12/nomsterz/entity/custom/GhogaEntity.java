@@ -71,7 +71,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
         return false;
     }
     public int getExperienceReward() {
-        return 4 + this.level.random.nextInt(5);
+        return 6 + this.level.random.nextInt(5);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -115,7 +115,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(Items.COOKED_PORKCHOP) || pStack.getItem().equals(Items.PORKCHOP);
+        return pStack.getItem().equals(Items.SLIME_BALL) || pStack.getItem().equals(Items.PORKCHOP);
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
@@ -171,7 +171,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
                     itemstack.shrink(1);
                 }
 
-                if (this.random.nextInt(7) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
+                if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
                     this.tame(p_30412_);
                     this.navigation.stop();
                     this.setTarget((LivingEntity)null);
@@ -241,6 +241,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.ghoga.attack", false));
             this.swinging = false;
+            playSound(ModSounds.GHOGA_HIT.get());
         }
         return PlayState.CONTINUE;
     }
@@ -262,19 +263,19 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return ModSounds.NATSHAI_IDLE.get();
+        return ModSounds.GHOGA_IDLE.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.NATSHAI_HIT.get();
+        return ModSounds.GHOGA_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.NATSHAI_DEATH.get();
+        return ModSounds.GHOGA_DEATH.get();
     }
 
     public void attackEntityWithRangedAttack(LivingEntity target) {

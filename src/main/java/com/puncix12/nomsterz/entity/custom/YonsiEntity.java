@@ -1,5 +1,6 @@
 package com.puncix12.nomsterz.entity.custom;
 
+import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.sound.ModSounds;
@@ -48,6 +49,7 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
                 .add(Attributes.ATTACK_SPEED, 1f)
                 .add(Attributes.MOVEMENT_SPEED, 0.535f)
                 .add(Attributes.JUMP_STRENGTH, 0.3f)
+                .add(Attributes.ARMOR, 0.5f)
                 .add(Attributes.FOLLOW_RANGE, 20000f).build();
     }
 
@@ -87,12 +89,12 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob mob) {
-        return ModEntityTypes.NYANGA.get().create(serverLevel);
+        return ModEntityTypes.YONSI.get().create(serverLevel);
     }
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(Items.GOLDEN_APPLE);
+        return pStack.getItem().equals(ModItems.DHIRTA_SEED.get());
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
@@ -128,7 +130,7 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
 
                     return interactionresult;
                 }
-                else if ( itemstack.is(Items.WHEAT)) {
+                else if ( itemstack.is(Items.CARROT)) {
                     InteractionResult interactionresult = super.mobInteract(p_30412_, p_30413_);
                     if ((!interactionresult.consumesAction() || this.isBaby()) && this.isOwnedBy(p_30412_)) {
                         itemstack.shrink(1);
@@ -150,7 +152,7 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
 
                 }
 
-            } else if (itemstack.is(ModItems.DHIRTA.get())) {
+            } else if (itemstack.is(ModBlocks.LAUS_LEAVES.get().asItem()) && this.isInWater()) {
                 if (!p_30412_.getAbilities().instabuild) {
                     itemstack.shrink(1);
                 }
@@ -226,7 +228,7 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.yonsi.attack", false));
             this.swinging = false;
-            playSound(ModSounds.NYANGA_IDLE2.get());
+            playSound(ModSounds.YONSI_ATTACK.get());
         }
         return PlayState.CONTINUE;
     }
@@ -381,20 +383,18 @@ public class YonsiEntity extends TamableAnimal implements IAnimatable, PlayerRid
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        if(Math.random() > 0.5)
-            return ModSounds.NYANGA_IDLE.get();
-        return ModSounds.NYANGA_IDLE2.get();
+        return ModSounds.YONSI_IDLE.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.NYANGA_HIT.get();
+        return ModSounds.YONSI_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.NYANGA_DEATH.get();
+        return ModSounds.YONSI_DEATH.get();
     }
 }

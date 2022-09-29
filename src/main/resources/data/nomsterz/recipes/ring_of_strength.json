@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "minecraft:copper_block"},
+    {"item": "nomsterz:swerdarm_sword_piece"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "nomsterz:natshai_skin"},
+    {"item": "nomsterz:iron_laus_ring"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "minecraft:iron_block"},
+    {"item": "minecraft:blaze_powder"}
+  ],
+  "output": {
+    "item": "nomsterz:ring_of_strength",
+    "count": 1
+  }
+}
