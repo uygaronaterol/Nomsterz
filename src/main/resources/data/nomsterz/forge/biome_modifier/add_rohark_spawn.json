@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_plains",
+  "entity": {
+    "type": "nomsterz:rohark",
+    "weight": 3,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

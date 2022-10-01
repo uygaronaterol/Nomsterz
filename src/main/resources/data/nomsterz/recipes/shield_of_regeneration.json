@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:kashisos_head_piece"},
+    {"item": "nomsterz:rohark_quill"},
+    {"item": "nomsterz:rohark_quill"},
+    {"item": "nomsterz:ohanush_hand"},
+    {"item": "nomsterz:laus_shield"},
+    {"item": "nomsterz:rohark_quill"},
+    {"item": "nomsterz:kashisos_head_piece"},
+    {"item": "nomsterz:rohark_quill"},
+    {"item": "nomsterz:rohark_quill"}
+  ],
+  "output": {
+    "item": "nomsterz:shield_of_regeneration",
+    "count": 1
+  }
+}

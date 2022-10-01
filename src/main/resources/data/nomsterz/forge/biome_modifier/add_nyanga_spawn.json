@@ -3,7 +3,7 @@
   "biomes": "#forge:is_snowy",
   "entity": {
     "type": "nomsterz:nyanga",
-    "weight": 20,
+    "weight": 3,
     "minCount": 1,
     "maxCount": 3
   }

@@ -4,6 +4,8 @@ import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.ModItems;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -29,9 +31,17 @@ public class GhogaSpitProjectile extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult pResult) {
         super.onHitEntity(pResult);
-        if(pResult.getEntity().isAlive())
-            pResult.getEntity().setSecondsOnFire(3);
-        pResult.getEntity().causeFallDamage(4,2, DamageSource.FALL);
+
+        if (pResult.getEntity() instanceof LivingEntity) {
+            int i = 0;
+            if(((LivingEntity) pResult.getEntity()).getHealth() > 0.5f){
+                i+=((LivingEntity) pResult.getEntity()).getHealth();
+            }
+            if (i > 0) {
+                ((LivingEntity)pResult.getEntity()).addEffect(new MobEffectInstance(MobEffects.POISON, i * 20, 0),pResult.getEntity());
+
+            }
+        }
     }
 
     @Override

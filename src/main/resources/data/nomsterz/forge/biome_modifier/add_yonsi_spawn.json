@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_slope",
+  "entity": {
+    "type": "nomsterz:yonsi",
+    "weight": 1,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

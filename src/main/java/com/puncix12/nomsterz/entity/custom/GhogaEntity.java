@@ -45,7 +45,6 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
         super(p_27557_, p_27558_);
 
     }
-
     @Override
     public boolean canDrownInFluidType(FluidType type) {
         return false;
@@ -115,7 +114,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(Items.SLIME_BALL) || pStack.getItem().equals(Items.PORKCHOP);
+        return pStack.getItem().equals(Items.SLIME_BALL) ;
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
@@ -294,9 +293,6 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
                 arrow.setDeltaMovement(d0, d1  , d2);
             this.level.addFreshEntity(arrow);
 
-
-            //soepe.shoot( d0, d1 + d3 * (double)0.2F - 2, d2, 1.6F, (float)(14 - this.world.getDifficulty().getId() * 4));
-            //this.world.addEntity(soepe);
         }
     }
 

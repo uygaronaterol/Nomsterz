@@ -54,6 +54,28 @@ public class ModSounds {
             registerSoundEvent("ghoga_idle");
     public static final RegistryObject<SoundEvent> GHOGA_DEATH =
             registerSoundEvent("ghoga_death");
+    public static final RegistryObject<SoundEvent> KASHISOS_HIT =
+            registerSoundEvent("kashisos_hit");
+    public static final RegistryObject<SoundEvent> KASHISOS_IDLE =
+            registerSoundEvent("kashisos_idle");
+    public static final RegistryObject<SoundEvent> KASHISOS_DEATH =
+            registerSoundEvent("kashisos_death");
+    public static final RegistryObject<SoundEvent> OHANUSH_IDLE =
+            registerSoundEvent("ohanush_idle");
+    public static final RegistryObject<SoundEvent> OHANUSH_HIT =
+            registerSoundEvent("ohanush_hit");
+    public static final RegistryObject<SoundEvent> OHANUSH_DEATH =
+            registerSoundEvent("ohanush_death");
+    public static final RegistryObject<SoundEvent> OHANUSH_ATTACK =
+            registerSoundEvent("ohanush_attack");
+    public static final RegistryObject<SoundEvent> ROHARK_IDLE =
+            registerSoundEvent("rohark_idle");
+    public static final RegistryObject<SoundEvent> ROHARK_HIT =
+            registerSoundEvent("rohark_hit");
+    public static final RegistryObject<SoundEvent> ROHARK_DEATH =
+            registerSoundEvent("rohark_death");
+    public static final RegistryObject<SoundEvent> ROHARK_ATTACK =
+            registerSoundEvent("rohark_attack");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Nomsterz.MOD_ID, name)));
     }

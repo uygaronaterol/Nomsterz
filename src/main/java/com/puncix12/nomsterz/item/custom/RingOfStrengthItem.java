@@ -40,7 +40,7 @@ public class RingOfStrengthItem extends Item {
                 i++;
             }
             if (i > 0) {
-                ((LivingEntity)pEntity).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, i * 20, 0), pEntity);
+                ((LivingEntity)pEntity).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, i * 20, 0,true,false), pEntity);
             }
         }
     }

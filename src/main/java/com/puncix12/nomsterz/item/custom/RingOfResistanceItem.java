@@ -40,7 +40,7 @@ public class RingOfResistanceItem extends Item {
                 i++;
             }
             if (i > 0) {
-                ((LivingEntity)pEntity).addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, i * 20, 0), pEntity);
+                ((LivingEntity)pEntity).addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, i * 20, 0,true,false), pEntity);
 
             }
         }

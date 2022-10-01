@@ -2,6 +2,7 @@ package com.puncix12.nomsterz.block;
 
 import com.puncix12.nomsterz.Nomsterz;
 import com.puncix12.nomsterz.block.custom.DhirtaCropBlock;
+import com.puncix12.nomsterz.block.custom.IlgrosuCropBlock;
 import com.puncix12.nomsterz.block.custom.ModFlammableRotatedPillarBlock;
 import com.puncix12.nomsterz.block.custom.NomsterCraftingTableBlock;
 import com.puncix12.nomsterz.item.ModCreativeModeTab;
@@ -32,6 +33,8 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Nomsterz.MOD_ID);
     public static final RegistryObject<Block> DHIRTA_CROP =
             BLOCKS.register( "dhirta_crop", () -> new DhirtaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> ILGROSU_CROP =
+            BLOCKS.register( "ilgrosu_crop", () -> new IlgrosuCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
     public static final RegistryObject<Block> NOMSTER_CRAFTING_TABLE =
             registerBlock( "nomster_crafting_table", () -> new NomsterCraftingTableBlock(BlockBehaviour.Properties.of(Material.WOOD)
                             .noOcclusion().explosionResistance(2)), ModCreativeModeTab.NOMSTERZ_TAB);

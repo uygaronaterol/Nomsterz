@@ -62,6 +62,16 @@ public class ModEvents {
                         new ItemStack(ModItems.COOKED_PELLATT_MEAT.get(), 4),
                         stack1, 10, 2, 0.02F));
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_KASHISOS_MEAT.get(), 4),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_OHANUSH_MEAT.get(), 2),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_ROHARK_MEAT.get(), 4),
+                        stack1, 10, 2, 0.02F));
+
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModBlocks.LAUS_LOG.get(), 19),
                         stack1, 10, 2, 0.02F));
 
@@ -93,6 +103,9 @@ public class ModEvents {
             event.put(ModEntityTypes.PELLATT.get(), PellattEntity.setAttributes());
             event.put(ModEntityTypes.GHOGA.get(), GhogaEntity.setAttributes());
             event.put(ModEntityTypes.YONSI.get(), YonsiEntity.setAttributes());
+            event.put(ModEntityTypes.ROHARK.get(), RoharkEntity.setAttributes());
+            event.put(ModEntityTypes.KASHISOS.get(), KashisosEntity.setAttributes());
+            event.put(ModEntityTypes.OHANUSH.get(), OhanushEntity.setAttributes());
 
         }
     }

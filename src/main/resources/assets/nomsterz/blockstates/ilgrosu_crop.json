@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": { "model": "nomsterz:block/ilgrosu_stage0" },
+    "age=1": { "model": "nomsterz:block/ilgrosu_stage1" },
+    "age=2": { "model": "nomsterz:block/ilgrosu_stage2" },
+    "age=3": { "model": "nomsterz:block/ilgrosu_stage3" },
+    "age=4": { "model": "nomsterz:block/ilgrosu_stage4" },
+    "age=5": { "model": "nomsterz:block/ilgrosu_stage5" },
+    "age=6": { "model": "nomsterz:block/ilgrosu_stage6" },
+    "age=7": { "model": "nomsterz:block/ilgrosu_stage7" }
+
+  }
+}

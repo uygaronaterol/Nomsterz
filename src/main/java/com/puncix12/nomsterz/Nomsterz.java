@@ -5,6 +5,7 @@ import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.block.entity.ModBlockEntities;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.entity.client.*;
+import com.puncix12.nomsterz.entity.custom.KashisosEntity;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.recipe.ModRecipes;
 import com.puncix12.nomsterz.screen.ModMenuTypes;
@@ -72,8 +73,12 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.PELLATT.get(), PellattRenderer::new);
             EntityRenderers.register(ModEntityTypes.GHOGA.get(), GhogaRenderer::new);
             EntityRenderers.register(ModEntityTypes.YONSI.get(), YonsiRenderer::new);
+            EntityRenderers.register(ModEntityTypes.ROHARK.get(), RoharkRenderer::new);
+            EntityRenderers.register(ModEntityTypes.KASHISOS.get(), KashisosRenderer::new);
+            EntityRenderers.register(ModEntityTypes.OHANUSH.get(), OhanushRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
+            EntityRenderers.register(ModEntityTypes.ROHARK_QUILL_PROJECTILE.get(), RoharkQuillProjectileRenderer::new);
 
 
             MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);

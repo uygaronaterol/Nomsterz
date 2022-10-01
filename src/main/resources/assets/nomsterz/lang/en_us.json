@@ -21,6 +21,12 @@
   "item.nomsterz.cooked_ghoga_meat": "Cooked Ghoga Meat",
   "item.nomsterz.raw_yonsi_meat": "Raw Yonsi Meat",
   "item.nomsterz.cooked_yonsi_meat": "Cooked Yonsi Meat",
+  "item.nomsterz.raw_ohanush_meat": "Raw Ohanush Meat",
+  "item.nomsterz.cooked_ohanush_meat": "Cooked Ohanush Meat",
+  "item.nomsterz.raw_kashisos_meat": "Raw Kashisos Meat",
+  "item.nomsterz.cooked_kashisos_meat": "Cooked Kashisos Meat",
+  "item.nomsterz.raw_rohark_meat": "Raw Rohark Meat",
+  "item.nomsterz.cooked_rohark_meat": "Cooked Rohark Meat",
   "item.nomsterz.raw_pellatt_meat": "Raw Pellatt Meat",
   "item.nomsterz.cooked_pellatt_meat": "Cooked Pellatt Meat",
 
@@ -29,8 +35,11 @@
   "item.nomsterz.ghoga_spit": "Ghoga Spit",
   "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
   "item.nomsterz.dhirta_seed": "Dhirta Seed",
+  "item.nomsterz.ilgrosu_seed": "Ilgrosu Seed",
 
   "block.nomsterz.dhirta_crop": "Dhirta Crop",
+  "block.nomsterz.ilgrosu_crop": "Ilgrosu Crop",
+
   "block.nomsterz.nomster_crafting_table": "Nomster Crafting Table",
   "block.nomsterz.laus_leaves": "Laus Leaves",
   "block.nomsterz.laus_log": "Laus Log",
@@ -48,6 +57,9 @@
   "item.nomsterz.ghoga_spawn_egg": "Ghoga Spawn Egg",
   "item.nomsterz.natshai_spawn_egg": "Natshai Spawn Egg",
   "item.nomsterz.yonsi_spawn_egg": "Yonsi Spawn Egg",
+  "item.nomsterz.ohanush_spawn_egg": "Ohanush Spawn Egg",
+  "item.nomsterz.kashisos_spawn_egg": "Kashisos Spawn Egg",
+  "item.nomsterz.rohark_spawn_egg": "Rohark Spawn Egg",
 
   "item.nomsterz.nomster_essence": "Nomster Essence",
   "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
@@ -61,6 +73,12 @@
   "item.nomsterz.ring_of_strength": "Ring of Strength",
   "item.nomsterz.ring_of_enlightenment": "Ring of Enlightenment",
   "item.nomsterz.yonsi_claw": "Yonsi Claw",
+  "item.nomsterz.ohanush_hand": "Ohansuh Hand",
+  "item.nomsterz.kashisos_head_piece": "Kashisos Head Piece",
+  "item.nomsterz.rohark_quill": "Rohark Quill",
+  "item.nomsterz.laus_shield": "Laus Shield",
+  "item.nomsterz.shield_of_regeneration": "Shield of Regeneration",
+  "item.nomsterz.ilgrosu": "Ilgrosu",
 
 
   "sounds.nomsterz.nyanga_idle": "Nyanga Idle",

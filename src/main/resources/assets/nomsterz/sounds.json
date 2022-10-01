@@ -124,5 +124,71 @@
     "sounds": [
       "nomsterz:yonsi_attack"
     ]
+  },
+  "ohanush_hit": {
+    "subtitle": "nomsterz.ohanush_hit",
+    "sounds": [
+      "nomsterz:ohanush_hit"
+    ]
+  },
+  "ohanush_death": {
+    "subtitle": "nomsterz.ohanush_death",
+    "sounds": [
+      "nomsterz:ohanush_death"
+    ]
+  },
+  "ohanush_idle": {
+    "subtitle": "nomsterz.ohanush_idle",
+    "sounds": [
+      "nomsterz:ohanush_idle"
+    ]
+  },
+  "ohanush_attack": {
+    "subtitle": "nomsterz.ohanush_attack",
+    "sounds": [
+      "nomsterz:ohanush_attack"
+    ]
+  },
+  "kashisos_hit": {
+    "subtitle": "nomsterz.kashisos_hit",
+    "sounds": [
+      "nomsterz:kashisos_hit"
+    ]
+  },
+  "kashisos_death": {
+    "subtitle": "nomsterz.kashisos_death",
+    "sounds": [
+      "nomsterz:kashisos_death"
+    ]
+  },
+  "kashisos_idle": {
+    "subtitle": "nomsterz.kashisos_idle",
+    "sounds": [
+      "nomsterz:kashisos_idle"
+    ]
+  },
+  "rohark_attack": {
+    "subtitle": "nomsterz.rohark_attack",
+    "sounds": [
+      "nomsterz:rohark_attack"
+    ]
+  },
+  "rohark_hit": {
+    "subtitle": "nomsterz.rohark_hit",
+    "sounds": [
+      "nomsterz:rohark_hit"
+    ]
+  },
+  "rohark_death": {
+    "subtitle": "nomsterz.rohark_death",
+    "sounds": [
+      "nomsterz:rohark_death"
+    ]
+  },
+  "rohark_idle": {
+    "subtitle": "nomsterz.rohark_idle",
+    "sounds": [
+      "nomsterz:rohark_idle"
+    ]
   }
 }

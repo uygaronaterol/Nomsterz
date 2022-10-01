@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "nomsterz:item/shield_of_regeneration",
+		"particle": "nomsterz:item/shield_of_regeneration"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 7],
+			"to": [13, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 4], "texture": "#0"},
+				"east": {"uv": [3, 5.5, 3.5, 9.5], "texture": "#0"},
+				"south": {"uv": [2.5, 0, 5, 4], "texture": "#0"},
+				"west": {"uv": [3.5, 5.5, 4, 9.5], "texture": "#0"},
+				"up": {"uv": [7.5, 3.5, 5, 3], "texture": "#0"},
+				"down": {"uv": [7.5, 3.5, 5, 4], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"translation": [0, -9.25, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, -9.25, 0]
+		},
+		"gui": {
+			"rotation": [0, -180, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"translation": [0, 0, -1],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "shield",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

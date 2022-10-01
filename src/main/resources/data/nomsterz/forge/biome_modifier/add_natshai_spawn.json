@@ -3,7 +3,7 @@
   "biomes": "#forge:is_dry/overworld",
   "entity": {
     "type": "nomsterz:natshai",
-    "weight": 20,
+    "weight": 2,
     "minCount": 4,
     "maxCount": 5
   }

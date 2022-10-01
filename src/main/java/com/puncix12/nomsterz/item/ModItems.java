@@ -6,6 +6,7 @@ import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,8 +33,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> YONSI_CLAW = ITEMS.register("yonsi_claw",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> ROHARK_QUILL = ITEMS.register("rohark_quill",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> OHANUSH_HAND = ITEMS.register("ohanush_hand",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> KASHISOS_HEAD_PIECE = ITEMS.register("kashisos_head_piece",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
-    //Wood
 
 
     //Spawn Eggs
@@ -55,6 +61,15 @@ public class ModItems {
     public static final RegistryObject<Item> YONSI_SPAWN_EGG = ITEMS.register("yonsi_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.YONSI,0x065f1b,0x0a7c25
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> ROHARK_SPAWN_EGG = ITEMS.register("rohark_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROHARK,0x2f200f,0xd1c6b1
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> KASHISOS_SPAWN_EGG = ITEMS.register("kashisos_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.KASHISOS,0x1e3e26,0xa8b9ab
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> OHANUSH_SPAWN_EGG = ITEMS.register("ohanush_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.OHANUSH,0x1c4401,0X85bb1f
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Nomster items
     public static final RegistryObject<Item> NOMSTER_COMMANDER = ITEMS.register("nomster_commander",
@@ -72,6 +87,12 @@ public class ModItems {
             () -> new RingOfStrengthItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
     public static final RegistryObject<Item> RING_OF_ENLIGHTENMENT = ITEMS.register("ring_of_enlightenment",
             () -> new RingOfEnlightenmentItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> SHIELD_OF_REGENERATION = ITEMS.register("shield_of_regeneration",
+            () -> new ShieldOfRegenerationItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> LAUS_SHIELD = ITEMS.register("laus_shield",
+            () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1).durability(800)));
+
+
     //Foods
     public static final RegistryObject<Item> RAW_NATSHAI_MEAT = ITEMS.register("raw_natshai_meat",
             () -> new RawNatshaiMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_NATSHAI_MEAT)));
@@ -97,6 +118,18 @@ public class ModItems {
             () -> new RawPellattItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_PELLATT_MEAT)));
     public static final RegistryObject<Item> COOKED_PELLATT_MEAT = ITEMS.register("cooked_pellatt_meat",
             () -> new CookedPellattItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_PELLATT_MEAT)));
+    public static final RegistryObject<Item> RAW_OHANUSH_MEAT = ITEMS.register("raw_ohanush_meat",
+            () -> new RawOhanushMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_OHANUSH_MEAT)));
+    public static final RegistryObject<Item> COOKED_OHANUSH_MEAT = ITEMS.register("cooked_ohanush_meat",
+            () -> new CookedOhanushMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_OHANUSH_MEAT)));
+    public static final RegistryObject<Item> RAW_KASHISOS_MEAT = ITEMS.register("raw_kashisos_meat",
+            () -> new RawKashisosMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_KASHISOS_MEAT)));
+    public static final RegistryObject<Item> COOKED_KASHISOS_MEAT = ITEMS.register("cooked_kashisos_meat",
+            () -> new CookedKashisosMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_KASHISOS_MEAT)));
+    public static final RegistryObject<Item> RAW_ROHARK_MEAT = ITEMS.register("raw_rohark_meat",
+            () -> new RawRoharkMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_ROHARK_MEAT)));
+    public static final RegistryObject<Item> COOKED_ROHARK_MEAT = ITEMS.register("cooked_rohark_meat",
+            () -> new CookedRoharkMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_ROHARK_MEAT)));
 
 
     //Nomster foods
@@ -104,11 +137,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.MEAT_PACKAGE)));
     public static final RegistryObject<Item> DHIRTA = ITEMS.register("dhirta",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.DHIRTA)));
+    public static final RegistryObject<Item> ILGROSU = ITEMS.register("ilgrosu",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.ILGROSU)));
 
     //Crop
     public static final RegistryObject<Item> DHIRTA_SEED = ITEMS.register("dhirta_seed",
             () -> new ItemNameBlockItem(ModBlocks.DHIRTA_CROP.get(),new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
-
+    public static final RegistryObject<Item> ILGROSU_SEED = ITEMS.register("ilgrosu_seed",
+            () -> new ItemNameBlockItem(ModBlocks.ILGROSU_CROP.get(),new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
 
     public static void register(IEventBus bus){
