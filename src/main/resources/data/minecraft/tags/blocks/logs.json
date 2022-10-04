@@ -4,6 +4,10 @@
     "nomsterz:laus_log",
     "nomsterz:laus_wood",
     "nomsterz:stripped_laus_log",
-    "nomsterz:stripped_laus_wood"
+    "nomsterz:stripped_laus_wood",
+    "nomsterz:farmers_log",
+    "nomsterz:farmers_wood",
+    "nomsterz:stripped_farmers_log",
+    "nomsterz:stripped_farmers_wood"
   ]
 }

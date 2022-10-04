@@ -7,6 +7,7 @@ import com.puncix12.nomsterz.block.custom.ModFlammableRotatedPillarBlock;
 import com.puncix12.nomsterz.block.custom.NomsterCraftingTableBlock;
 import com.puncix12.nomsterz.item.ModCreativeModeTab;
 import com.puncix12.nomsterz.item.ModItems;
+import com.puncix12.nomsterz.world.feature.tree.FarmersTreeGrower;
 import com.puncix12.nomsterz.world.feature.tree.LausTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -91,6 +92,59 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> LAUS_SAPLING = registerBlock("laus_sapling",
             () -> new SaplingBlock(new LausTreeGrower(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.NOMSTERZ_TAB);
+
+    public static final RegistryObject<Block> FARMERS_LOG = registerBlock("farmers_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.NOMSTERZ_TAB);
+    public static final RegistryObject<Block> FARMERS_WOOD = registerBlock("farmers_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.NOMSTERZ_TAB);
+    public static final RegistryObject<Block> STRIPPED_FARMERS_LOG = registerBlock("stripped_farmers_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.NOMSTERZ_TAB);
+    public static final RegistryObject<Block> STRIPPED_FARMERS_WOOD = registerBlock("stripped_farmers_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.NOMSTERZ_TAB);
+
+    public static final RegistryObject<Block> FARMERS_PLANKS = registerBlock("farmers_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+            }, ModCreativeModeTab.NOMSTERZ_TAB);
+    public static final RegistryObject<Block> FARMERS_LEAVES = registerBlock("farmers_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            }, ModCreativeModeTab.NOMSTERZ_TAB);
+
+    public static final RegistryObject<Block> FARMERS_SAPLING = registerBlock("farmers_sapling",
+            () -> new SaplingBlock(new FarmersTreeGrower(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.NOMSTERZ_TAB);
 
 

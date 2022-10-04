@@ -76,6 +76,22 @@ public class ModSounds {
             registerSoundEvent("rohark_death");
     public static final RegistryObject<SoundEvent> ROHARK_ATTACK =
             registerSoundEvent("rohark_attack");
+    public static final RegistryObject<SoundEvent> AHAGRIOQ_HIT =
+            registerSoundEvent("ahagrioq_hit");
+    public static final RegistryObject<SoundEvent> AHAGRIOQ_DEATH =
+            registerSoundEvent("ahagrioq_death");
+    public static final RegistryObject<SoundEvent> AHAGRIOQ_IDLE =
+            registerSoundEvent("ahagrioq_idle");
+    public static final RegistryObject<SoundEvent> IVEKROC_HIT =
+            registerSoundEvent("ivekroc_hit");
+    public static final RegistryObject<SoundEvent> IVEKROC_DEATH =
+            registerSoundEvent("ivekroc_death");
+    public static final RegistryObject<SoundEvent> IVEKROC_IDLE =
+            registerSoundEvent("ivekroc_idle");
+    public static final RegistryObject<SoundEvent> EMABRI_HIT =
+            registerSoundEvent("emabri_hit");
+    public static final RegistryObject<SoundEvent> EMABRI_IDLE =
+            registerSoundEvent("emabri_idle");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Nomsterz.MOD_ID, name)));
     }

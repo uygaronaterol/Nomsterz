@@ -3,7 +3,7 @@
   "biomes": "#forge:is_hot/overworld",
   "entity": {
     "type": "nomsterz:pellatt",
-    "weight": 3,
+    "weight": 1,
     "minCount": 3,
     "maxCount": 4
   }

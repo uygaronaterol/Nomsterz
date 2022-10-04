@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nomsterz:block/farmers_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nomsterz:block/farmers_log"
+    },
+    "axis=z": {
+      "model": "nomsterz:block/farmers_log_horizontal",
+      "x": 90
+    }
+  }
+}

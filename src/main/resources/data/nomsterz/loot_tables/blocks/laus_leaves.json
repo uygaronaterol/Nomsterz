@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -12,9 +12,7 @@
               "chance": 0.1
             }
           ]
-        }
-      ],
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "name": "nomsterz:laus_leaves",

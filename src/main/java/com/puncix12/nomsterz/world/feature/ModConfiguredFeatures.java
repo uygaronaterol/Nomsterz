@@ -46,6 +46,22 @@ public class ModConfiguredFeatures {
                             0.5F)), ModPlacedFeatures.LAUS_CHECKED.getHolder().get())));
 
 
+    public static final RegistryObject<ConfiguredFeature<?, ?>> FARMERS =
+            CONFIGURED_FEATURES.register("farmers", () ->
+                    new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                            BlockStateProvider.simple(ModBlocks.FARMERS_LOG.get()),
+                            new MegaJungleTrunkPlacer(3, 1, 1),
+                            BlockStateProvider.simple(ModBlocks.FARMERS_LEAVES.get()),
+                            new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
+                            new TwoLayersFeatureSize(1, 0, 1)).build()));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> FARMERS_SPAWN =
+            CONFIGURED_FEATURES.register("farmers_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.FARMERS_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.FARMERS_CHECKED.getHolder().get())));
+
+
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURES.register(eventBus);
     }

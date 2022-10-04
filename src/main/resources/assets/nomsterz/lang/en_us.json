@@ -7,10 +7,27 @@
   "entity.nomsterz.ghoga": "Ghoga",
   "entity.nomsterz.yonsi": "Yonsi",
   "entity.nomsterz.nyanga": "Nyanga",
+  "entity.nomsterz.rohark": "Rohark",
+  "entity.nomsterz.ohanush": "Ohansuh",
+  "entity.nomsterz.kashisos": "Kashisos",
+  "entity.nomsterz.ivekroc": "Ivekroc",
+  "entity.nomsterz.ahagrioq": "Ahagrioq",
+  "entity.nomsterz.emabri": "Emabri",
+
+
+  "block.nomsterz.farmers_log": "Farmers Log",
+  "block.nomsterz.farmers_wood": "Farmers Wood",
+  "block.nomsterz.farmers_leaves": "Farmers Leaves",
+  "block.nomsterz.farmers_sapling": "Farmers Sapling",
+  "block.nomsterz.farmers_planks": "Farmers Planks",
+  "block.nomsterz.stripped_farmers_wood": "Stripped Farmers Wood",
+  "block.nomsterz.stripped_farmers_log": "Stripped Farmers Log",
 
 
 
   "item.nomsterz.nomster_commander": "Nomster Commander",
+  "item.nomsterz.trident_from_depths": "Trident from Depths",
+
   "item.nomsterz.raw_natshai_meat": "Raw Natshai Meat",
   "item.nomsterz.cooked_natshai_meat": "Cooked Natshai Meat",
   "item.nomsterz.cooked_swerdarm_meat": "Cooked Swerdarm Meat",
@@ -27,15 +44,23 @@
   "item.nomsterz.cooked_kashisos_meat": "Cooked Kashisos Meat",
   "item.nomsterz.raw_rohark_meat": "Raw Rohark Meat",
   "item.nomsterz.cooked_rohark_meat": "Cooked Rohark Meat",
+  "item.nomsterz.raw_emabri_meat": "Raw Emabri Meat",
+  "item.nomsterz.cooked_emabri_meat": "Cooked Emabri Meat",
   "item.nomsterz.raw_pellatt_meat": "Raw Pellatt Meat",
   "item.nomsterz.cooked_pellatt_meat": "Cooked Pellatt Meat",
-
+  "item.nomsterz.raw_ahagrioq_meat": "Raw Ahagrioq Meat",
+  "item.nomsterz.cooked_ahagrioq_meat": "Cooked Ahagrioq Meat",
+  "item.nomsterz.raw_ivekroc_meat": "Raw Ivekroc Meat",
+  "item.nomsterz.cooked_ivekroc_meat": "Cooked Ivekroc Meat",
 
   "item.nomsterz.dhirta": "Dhirta",
   "item.nomsterz.ghoga_spit": "Ghoga Spit",
   "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
   "item.nomsterz.dhirta_seed": "Dhirta Seed",
   "item.nomsterz.ilgrosu_seed": "Ilgrosu Seed",
+  "item.nomsterz.ivekroc_horn": "Ivekroc Horn",
+  "item.nomsterz.ahagrioq_fin": "Ahagrioq Fin",
+  "item.nomsterz.emabri_shell": "Emabri Shell",
 
   "block.nomsterz.dhirta_crop": "Dhirta Crop",
   "block.nomsterz.ilgrosu_crop": "Ilgrosu Crop",
@@ -60,6 +85,9 @@
   "item.nomsterz.ohanush_spawn_egg": "Ohanush Spawn Egg",
   "item.nomsterz.kashisos_spawn_egg": "Kashisos Spawn Egg",
   "item.nomsterz.rohark_spawn_egg": "Rohark Spawn Egg",
+  "item.nomsterz.ivekroc_spawn_egg": "Ivekroc Spawn Egg",
+  "item.nomsterz.emabri_spawn_egg": "Emabri Spawn Egg",
+  "item.nomsterz.ahagrioq_spawn_egg": "Ahagrioq Spawn Egg",
 
   "item.nomsterz.nomster_essence": "Nomster Essence",
   "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",

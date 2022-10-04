@@ -30,6 +30,13 @@ public class ModPlacedFeatures {
                     PlacementUtils.countExtra(1, 0.1f, 1))));
 
 
+    public static final RegistryObject<PlacedFeature> FARMERS_CHECKED = PLACED_FEATURES.register("farmers_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.FARMERS.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.FARMERS_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> FARMERS_PLACED = PLACED_FEATURES.register("farmers_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.FARMERS_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(1, 0.1f, 1))));
 
     public static void register(IEventBus eventBus) {
         PLACED_FEATURES.register(eventBus);

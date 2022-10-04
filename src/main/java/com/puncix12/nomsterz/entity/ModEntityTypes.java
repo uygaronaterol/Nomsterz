@@ -5,7 +5,6 @@ import com.puncix12.nomsterz.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -52,6 +51,19 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("ohanush",
                     () -> EntityType.Builder.of(OhanushEntity::new, MobCategory.CREATURE).sized(1f,1.6f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "ohanush").toString()));
+    public static final RegistryObject<EntityType<AhagrioqEntity>> AHAGRIOQ =
+            ENTITY_TYPES.register("ahagrioq",
+                    () -> EntityType.Builder.of(AhagrioqEntity::new, MobCategory.CREATURE).sized(1f,1f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "ahagrioq").toString()));
+    public static final RegistryObject<EntityType<EmabriEntity>> EMABRI =
+            ENTITY_TYPES.register("emabri",
+                    () -> EntityType.Builder.of(EmabriEntity::new, MobCategory.CREATURE).sized(0.4f,0.3f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "emabri").toString()));
+    public static final RegistryObject<EntityType<IvekrocEntity>> IVEKROC =
+            ENTITY_TYPES.register("ivekroc",
+                    () -> EntityType.Builder.of(IvekrocEntity::new, MobCategory.CREATURE).sized(1f,1f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "ivekroc").toString()));
+
 
     public static final RegistryObject<EntityType<GhogaSpitProjectile>> GHOGA_SPIT_PROJECTILE = ENTITY_TYPES.register("ghoga_spit_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<GhogaSpitProjectile>)

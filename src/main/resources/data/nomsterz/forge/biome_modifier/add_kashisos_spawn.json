@@ -3,7 +3,7 @@
   "biomes": "#forge:is_coniferous",
   "entity": {
     "type": "nomsterz:kashisos",
-    "weight": 2,
+    "weight": 1,
     "minCount": 4,
     "maxCount": 5
   }

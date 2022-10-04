@@ -18,7 +18,7 @@ public class RawKashisosMeatItem extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(Component.literal("Feels like another Chinese food").withStyle(ChatFormatting.AQUA));
+            pTooltipComponents.add(Component.literal("You shouldn't eat this").withStyle(ChatFormatting.AQUA));
         } else {
             pTooltipComponents.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }

@@ -22,8 +22,7 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraftforge.fluids.FluidType;
+import net.minecraft.world.level.gameevent.GameEvent;;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
@@ -38,19 +37,12 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
     public NatshaiEntity(EntityType<? extends TamableAnimal> p_27557_, Level p_27558_) {
         super(p_27557_, p_27558_);
-
     }
 
-
-    @Override
-    public boolean canDrownInFluidType(FluidType type) {
-        return false;
-    }
-
-    @Override
-    public boolean canSwimInFluidType(FluidType type) {
+    public boolean canBreatheUnderwater() {
         return true;
     }
+
 
     @Override
     protected SoundEvent getSwimSound() {
@@ -81,13 +73,13 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
 
     @Override
     protected void registerGoals() {
-        this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal( 0, new FloatGoal(this));
+
         this.goalSelector.addGoal( 1, new SitWhenOrderedToGoal(this));
         this.goalSelector.addGoal( 2, new BreedGoal(this, 1.0D));
 
         this.goalSelector.addGoal( 4, new FollowOwnerGoal(this, 0.7,2,100,false));
         this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 0.6D, false));
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.6D));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(0, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
@@ -202,18 +194,9 @@ public class NatshaiEntity extends TamableAnimal implements IAnimatable {
         return PlayState.STOP;
     }
 
-    @Override
-    public void tick() {
-        super.tick();
-    }
 
-    @Override
-    public float getSpeed() {
-        if(this.isInWater()){
-            return 1.2f;
-        }
-        return super.getSpeed();
-    }
+
+
 
     @Override
     public void registerControllers(AnimationData data) {

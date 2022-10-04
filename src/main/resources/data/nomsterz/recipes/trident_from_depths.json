@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:ivekroc_horn"},
+    {"item": "minecraft:scute"},
+    {"item": "minecraft:copper_ingot"},
+    {"item": "nomsterz:ahagrioq_fin"},
+    {"item": "minecraft:trident"},
+    {"item": "minecraft:conduit"},
+    {"item": "nomsterz:emabri_shell"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "minecraft:nautilus_shell"}
+  ],
+  "output": {
+    "item": "nomsterz:trident_from_depths",
+    "count": 1
+  }
+}

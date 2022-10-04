@@ -190,5 +190,53 @@
     "sounds": [
       "nomsterz:rohark_idle"
     ]
+  },
+  "ivekroc_hit": {
+    "subtitle": "nomsterz.ivekroc_hit",
+    "sounds": [
+      "nomsterz:ivekroc_hit"
+    ]
+  },
+  "ivekroc_death": {
+    "subtitle": "nomsterz.ivekroc_death",
+    "sounds": [
+      "nomsterz:ivekroc_death"
+    ]
+  },
+  "ivekroc_idle": {
+    "subtitle": "nomsterz.ivekroc_idle",
+    "sounds": [
+      "nomsterz:ivekroc_idle"
+    ]
+  },
+  "ahagrioq_hit": {
+    "subtitle": "nomsterz.ahagrioq_hit",
+    "sounds": [
+      "nomsterz:ahagrioq_hit"
+    ]
+  },
+  "ahagrioq_death": {
+    "subtitle": "nomsterz.ahagrioq_death",
+    "sounds": [
+      "nomsterz:ahagrioq_death"
+    ]
+  },
+  "ahagrioq_idle": {
+    "subtitle": "nomsterz.ahagrioq_idle",
+    "sounds": [
+      "nomsterz:ahagrioq_idle"
+    ]
+  },
+  "emabri_hit": {
+    "subtitle": "nomsterz.emabri_hit",
+    "sounds": [
+      "nomsterz:emabri_hit"
+    ]
+  },
+  "emabri_idle": {
+    "subtitle": "nomsterz.emabri_idle",
+    "sounds": [
+      "nomsterz:emabri_idle"
+    ]
   }
 }

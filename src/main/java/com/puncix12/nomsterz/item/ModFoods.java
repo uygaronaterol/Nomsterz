@@ -19,30 +19,42 @@ public class ModFoods {
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.POISON, 1500, 0), 1F).meat().build();
     public static final FoodProperties COOKED_SWERDARM_MEAT = (new FoodProperties.Builder()).nutrition(9).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.POISON, 300, 0), 1F).meat().build();
-    public static final FoodProperties RAW_GHOGA_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_GHOGA_MEAT = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
-    public static final FoodProperties COOKED_GHOGA_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties COOKED_GHOGA_MEAT = (new FoodProperties.Builder()).nutrition(7).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1F).meat().build();
-    public static final FoodProperties RAW_YONSI_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_YONSI_MEAT = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 0), 1F).meat().build();
     public static final FoodProperties COOKED_YONSI_MEAT = (new FoodProperties.Builder()).nutrition(9).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.GLOWING, 600, 0), 1F).meat().build();
-    public static final FoodProperties RAW_PELLATT_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_PELLATT_MEAT = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
-    public static final FoodProperties COOKED_PELLATT_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties COOKED_PELLATT_MEAT = (new FoodProperties.Builder()).nutrition(8).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 1F).meat().build();
-    public static final FoodProperties RAW_KASHISOS_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_KASHISOS_MEAT = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
-    public static final FoodProperties COOKED_KASHISOS_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties COOKED_KASHISOS_MEAT = (new FoodProperties.Builder()).nutrition(8).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 1F).meat().build();
-    public static final FoodProperties RAW_OHANUSH_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_OHANUSH_MEAT = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
     public static final FoodProperties COOKED_OHANUSH_MEAT = (new FoodProperties.Builder()).nutrition(9).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).meat().build();
-    public static final FoodProperties RAW_ROHARK_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties RAW_ROHARK_MEAT = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
-    public static final FoodProperties COOKED_ROHARK_MEAT = (new FoodProperties.Builder()).nutrition(9).
+    public static final FoodProperties COOKED_ROHARK_MEAT = (new FoodProperties.Builder()).nutrition(7).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_AHAGRIOQ_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WITHER, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_AHAGRIOQ_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_EMABRI_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_EMABRI_MEAT = (new FoodProperties.Builder()).nutrition(7).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_IVEKROC_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_IVEKROC_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 0), 1F).meat().build();
 
     public static final FoodProperties DHIRTA = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.3f).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 1F).build();

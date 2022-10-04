@@ -73,7 +73,15 @@ public class ModEvents {
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.COOKED_ROHARK_MEAT.get(), 4),
                         stack1, 10, 2, 0.02F));
-
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_EMABRI_MEAT.get(), 10),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_IVEKROC_MEAT.get(), 3),
+                        stack1, 10, 2, 0.02F));
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.COOKED_AHAGRIOQ_MEAT.get(), 3),
+                        stack1, 10, 2, 0.02F));
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModBlocks.LAUS_LOG.get(), 19),
                         stack1, 10, 2, 0.02F));
@@ -92,6 +100,14 @@ public class ModEvents {
                 trades.get(2).add((trader, rand) -> new MerchantOffer(
                         new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 50),
                         stack3, 10, 5, 0.02F));
+                ItemStack stack6 = new ItemStack(ModBlocks.FARMERS_SAPLING.get().asItem(), 1);
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 64),
+                        stack6, 10, 5, 0.02F));
+                ItemStack stack7 = new ItemStack(ModBlocks.LAUS_SAPLING.get().asItem(), 1);
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 64),
+                        stack7, 10, 5, 0.02F));
             }
         }
     }
@@ -109,6 +125,9 @@ public class ModEvents {
             event.put(ModEntityTypes.ROHARK.get(), RoharkEntity.setAttributes());
             event.put(ModEntityTypes.KASHISOS.get(), KashisosEntity.setAttributes());
             event.put(ModEntityTypes.OHANUSH.get(), OhanushEntity.setAttributes());
+            event.put(ModEntityTypes.AHAGRIOQ.get(), AhagrioqEntity.setAttributes());
+            event.put(ModEntityTypes.EMABRI.get(), EmabriEntity.setAttributes());
+            event.put(ModEntityTypes.IVEKROC.get(), IvekrocEntity.setAttributes());
 
         }
     }

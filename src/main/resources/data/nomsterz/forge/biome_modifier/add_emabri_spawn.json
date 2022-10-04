@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#minecraft:is_ocean",
+  "entity": {
+    "type": "nomsterz:emabri",
+    "weight": 10,
+    "minCount": 4,
+    "maxCount": 5
+  }
+}
