@@ -3,7 +3,7 @@
   "biomes": "#minecraft:is_ocean",
   "entity": {
     "type": "nomsterz:ivekroc",
-    "weight": 2,
+    "weight": 1,
     "minCount": 3,
     "maxCount": 4
   }

@@ -3,7 +3,7 @@
   "biomes": "#minecraft:is_ocean",
   "entity": {
     "type": "nomsterz:ahagrioq",
-    "weight": 2,
+    "weight": 1,
     "minCount": 1,
     "maxCount": 2
   }
