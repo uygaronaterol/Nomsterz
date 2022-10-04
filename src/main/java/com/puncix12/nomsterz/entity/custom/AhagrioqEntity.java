@@ -240,7 +240,7 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
     @Override
     public void tick() {
         LivingEntity livingentity = this.getTarget();
-        if (livingentity != null) {
+        if (livingentity != null && this.isInWater()) {
             Vec3 vec3 = new Vec3(this.getX() - livingentity.getX(), this.getY() - livingentity.getY(), this.getZ() - livingentity.getZ());
             BlockState blockstate = this.level.getBlockState(new BlockPos(this.getX() + vec3.x, this.getY() + vec3.y, this.getZ() + vec3.z));
             FluidState fluidstate = this.level.getFluidState(new BlockPos(this.getX() + vec3.x, this.getY() + vec3.y, this.getZ() + vec3.z));
@@ -277,7 +277,7 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
             return 0.2f;
         }
         else if( this.isInWater())
-            return 1.2f;
+            return 0.6f;
         return super.getSpeed();
     }
 

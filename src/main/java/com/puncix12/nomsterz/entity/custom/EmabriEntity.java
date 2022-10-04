@@ -32,6 +32,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.fluids.FluidType;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.AnimationState;
@@ -231,7 +232,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
     @Override
     public void tick() {
         LivingEntity livingentity = this.getTarget();
-        if (livingentity != null) {
+        if (livingentity != null && this.isInWater()) {
             Vec3 vec3 = new Vec3(this.getX() - livingentity.getX(), this.getY() - livingentity.getY(), this.getZ() - livingentity.getZ());
             BlockState blockstate = this.level.getBlockState(new BlockPos(this.getX() + vec3.x, this.getY() + vec3.y, this.getZ() + vec3.z));
             FluidState fluidstate = this.level.getFluidState(new BlockPos(this.getX() + vec3.x, this.getY() + vec3.y, this.getZ() + vec3.z));
@@ -266,7 +267,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
             return 0.2f;
         }
         else if( this.isInWater())
-            return 1.2f;
+            return 0.4f;
         return super.getSpeed();
     }
 
