@@ -9,6 +9,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,7 +24,8 @@ public class DerrmuesSummoningKeyItem extends Item {
         BlockPos pPos = pContext.getClickedPos();
         Entity entity = pContext.getPlayer();
         BlockState blockstate = level.getBlockState(pPos);
-        if ( blockstate.is(ModBlocks.SUMMONING_ALTAR.get())) {
+        BlockState blockState1 = level.getBlockState(pPos.below());
+        if ( blockstate.is(ModBlocks.SUMMONING_ALTAR.get()) && blockState1.is(Blocks.GRASS_BLOCK)) {
                 level.removeBlock(pPos, false);
                 DerrmuesEntity derrmues = ModEntityTypes.DERRMUES.get().create(level);
                 derrmues.moveTo(entity.getX(), entity.getY(), entity.getZ(), entity.getYRot(), entity.getXRot());
