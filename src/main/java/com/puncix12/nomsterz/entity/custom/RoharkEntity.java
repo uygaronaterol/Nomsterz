@@ -203,8 +203,7 @@ public class RoharkEntity extends TamableAnimal implements IAnimatable {
     @Override
     public void tick() {
         super.tick();
-        if(this.isAggressive() &&  this.hasTarget() && Math.random() < 0.005)
-            attackEntityWithRangedAttack((LivingEntity)this.getTarget());
+
     }
     public boolean hasTarget(){
         if(this.getTarget() == null)
@@ -258,6 +257,7 @@ public class RoharkEntity extends TamableAnimal implements IAnimatable {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
+        attackEntityWithRangedAttack((LivingEntity)this.getTarget());
         return ModSounds.ROHARK_IDLE.get();
     }
 
@@ -275,7 +275,7 @@ public class RoharkEntity extends TamableAnimal implements IAnimatable {
 
     public void attackEntityWithRangedAttack(LivingEntity target) {
 
-        if(!this.getTarget().equals(NULL) && this.isAggressive()) {
+        if(this.getTarget() instanceof  LivingEntity)  {
             double d0 = target.getX() - this.getX();
             double d1 = target.getY(0.33D) - this.getY();
             double d2 = target.getZ() - this.getZ();

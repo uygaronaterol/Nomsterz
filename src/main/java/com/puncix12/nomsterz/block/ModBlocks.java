@@ -1,10 +1,7 @@
 package com.puncix12.nomsterz.block;
 
 import com.puncix12.nomsterz.Nomsterz;
-import com.puncix12.nomsterz.block.custom.DhirtaCropBlock;
-import com.puncix12.nomsterz.block.custom.IlgrosuCropBlock;
-import com.puncix12.nomsterz.block.custom.ModFlammableRotatedPillarBlock;
-import com.puncix12.nomsterz.block.custom.NomsterCraftingTableBlock;
+import com.puncix12.nomsterz.block.custom.*;
 import com.puncix12.nomsterz.item.ModCreativeModeTab;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.world.feature.tree.FarmersTreeGrower;
@@ -40,6 +37,9 @@ public class ModBlocks {
             registerBlock( "nomster_crafting_table", () -> new NomsterCraftingTableBlock(BlockBehaviour.Properties.of(Material.WOOD)
                             .noOcclusion().explosionResistance(2)), ModCreativeModeTab.NOMSTERZ_TAB);
 
+    public static final RegistryObject<Block> SUMMONING_ALTAR =
+            registerBlock( "summoning_altar", () -> new SummoningAltarBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .noOcclusion().strength(10,100)), ModCreativeModeTab.NOMSTERZ_TAB);
 
     public static final RegistryObject<Block> LAUS_LOG = registerBlock("laus_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)

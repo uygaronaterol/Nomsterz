@@ -135,7 +135,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob mob) {
-        return ModEntityTypes.AHAGRIOQ.get().create(serverLevel);
+        return ModEntityTypes.EMABRI.get().create(serverLevel);
     }
 
     @Override
@@ -215,15 +215,15 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.emabri.walk", true));
             return PlayState.CONTINUE;
         }
         else if(this.isInSittingPose() ){
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.sit", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.emabri.sit", true));
             return PlayState.CONTINUE;
         }
         else if(!this.isInSittingPose()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.idle", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.emabri.idle", true));
             return PlayState.CONTINUE;
         }
         return PlayState.STOP;
@@ -283,7 +283,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
         if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
-                    addAnimation("animation.ahagrioq.attack", false));
+                    addAnimation("animation.emabri.attack", false));
             playSound(ModSounds.EMABRI_HIT.get());
             this.swinging = false;
         }

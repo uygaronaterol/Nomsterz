@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_swamp",
+  "entity": {
+    "type": "nomsterz:piara",
+    "weight": 10,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

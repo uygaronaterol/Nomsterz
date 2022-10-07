@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_swamp",
+  "entity": {
+    "type": "nomsterz:osipiti",
+    "weight": 1,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

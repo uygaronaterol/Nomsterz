@@ -189,7 +189,7 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
 
                     return interactionresult;
                 }
-                else if(itemstack.isEmpty() && !this.isInSittingPose()) {
+                else if(itemstack.isEmpty() && !this.isInSittingPose() && !this.isBaby()) {
                     this.doPlayerRide(p_30412_);
                     if(this.isInWater()){
                         this.setOrderedToSit(false);
@@ -222,15 +222,15 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ivekroc.walk", true));
             return PlayState.CONTINUE;
         }
         else if(this.isInSittingPose() ){
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.sit", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ivekroc.sit", true));
             return PlayState.CONTINUE;
         }
         else if(!this.isInSittingPose()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ahagrioq.idle", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ivekroc.idle", true));
             return PlayState.CONTINUE;
         }
         return PlayState.STOP;
@@ -290,7 +290,7 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
         if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
-                    addAnimation("animation.ahagrioq.attack", false));
+                    addAnimation("animation.ivekroc.attack", false));
             playSound(ModSounds.IVEKROC_HIT.get());
             this.swinging = false;
         }

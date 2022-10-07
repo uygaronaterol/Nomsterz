@@ -45,6 +45,12 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> IVEKROC_HORN = ITEMS.register("ivekroc_horn",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> DERRMUES_TOOTH = ITEMS.register("derrmues_tooth",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> OSIPITI_TREE = ITEMS.register("osipiti_tree",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> PIARA_HEAD = ITEMS.register("piara_head",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Spawn Eggs
     public static final RegistryObject<Item> NATSHAI_SPAWN_EGG = ITEMS.register("natshai_spawn_egg",
@@ -83,6 +89,20 @@ public class ModItems {
     public static final RegistryObject<Item> IVEKROC_SPAWN_EGG = ITEMS.register("ivekroc_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.IVEKROC,0x17445c,0x2dccff
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> DERRMUES_SPAWN_EGG = ITEMS.register("derrmues_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DERRMUES,0x3d483b,0x133716
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> OSIPITI_SPAWN_EGG = ITEMS.register("osipiti_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.OSIPITI,0x886461,0x4f6d20
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> PIARA_SPAWN_EGG = ITEMS.register("piara_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.PIARA,0x6d8836,0x3b5612
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+
+    public static final RegistryObject<Item> DERRMUES_EGG_SPAWN_EGG = ITEMS.register("derrmues_egg_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DERRMUES_EGG,0x3d483b,0x133716
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+
 
     //Nomster items
     public static final RegistryObject<Item> NOMSTER_COMMANDER = ITEMS.register("nomster_commander",
@@ -107,6 +127,11 @@ public class ModItems {
     public static final RegistryObject<Item> TRIDENT_FROM_DEPTHS = ITEMS.register("trident_from_depths",
             () -> new TridentFromDepthsItem(Tiers.NETHERITE, 6,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> DERRMUES_SUMMONING_KEY = ITEMS.register("derrmues_summoning_key",
+            () -> new DerrmuesSummoningKeyItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> DERRMUES_EGG = ITEMS.register("derrmues_egg",
+            () -> new DerrmuesEggItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+
 
     //Foods
     public static final RegistryObject<Item> RAW_NATSHAI_MEAT = ITEMS.register("raw_natshai_meat",
@@ -157,6 +182,18 @@ public class ModItems {
             () -> new RawAhagrioqMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_AHAGRIOQ_MEAT)));
     public static final RegistryObject<Item> COOKED_AHAGRIOQ_MEAT = ITEMS.register("cooked_ahagrioq_meat",
             () -> new CookedAhagrioqMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_AHAGRIOQ_MEAT)));
+    public static final RegistryObject<Item> RAW_DERRMUES_MEAT = ITEMS.register("raw_derrmues_meat",
+            () -> new RawDerrmuesMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_DERRMUES_MEAT)));
+    public static final RegistryObject<Item> COOKED_DERRMUES_MEAT = ITEMS.register("cooked_derrmues_meat",
+            () -> new CookedDerrmuesMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_DERRMUES_MEAT)));
+    public static final RegistryObject<Item> RAW_PIARA_MEAT = ITEMS.register("raw_piara_meat",
+            () -> new RawPiaraMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_PIARA_MEAT)));
+    public static final RegistryObject<Item> COOKED_PIARA_MEAT = ITEMS.register("cooked_piara_meat",
+            () -> new CookedPiaraMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_PIARA_MEAT)));
+    public static final RegistryObject<Item> RAW_OSIPITI_MEAT = ITEMS.register("raw_osipiti_meat",
+            () -> new RawOsipitiMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_OSIPITI_MEAT)));
+    public static final RegistryObject<Item> COOKED_OSIPITI_MEAT = ITEMS.register("cooked_osipiti_meat",
+            () -> new CookedOsipitiMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_OSIPITI_MEAT)));
 
 
     //Nomster foods

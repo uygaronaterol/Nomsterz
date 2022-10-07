@@ -55,6 +55,18 @@ public class ModFoods {
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0), 1F).meat().build();
     public static final FoodProperties COOKED_IVEKROC_MEAT = (new FoodProperties.Builder()).nutrition(8).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_DERRMUES_MEAT = (new FoodProperties.Builder()).nutrition(5).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_DERRMUES_MEAT = (new FoodProperties.Builder()).nutrition(14).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_OSIPITI_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_OSIPITI_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_PIARA_MEAT = (new FoodProperties.Builder()).nutrition(2).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_PIARA_MEAT = (new FoodProperties.Builder()).nutrition(5).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1F).meat().build();
 
     public static final FoodProperties DHIRTA = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.3f).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 1F).build();

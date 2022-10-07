@@ -128,6 +128,12 @@ public class ModEvents {
             event.put(ModEntityTypes.AHAGRIOQ.get(), AhagrioqEntity.setAttributes());
             event.put(ModEntityTypes.EMABRI.get(), EmabriEntity.setAttributes());
             event.put(ModEntityTypes.IVEKROC.get(), IvekrocEntity.setAttributes());
+            event.put(ModEntityTypes.DERRMUES.get(), DerrmuesEntity.setAttributes());
+            event.put(ModEntityTypes.OSIPITI.get(), OsipitiEntity.setAttributes());
+            event.put(ModEntityTypes.PIARA.get(), PiaraEntity.setAttributes());
+
+
+            event.put(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggEntity.setAttributes());
 
         }
     }

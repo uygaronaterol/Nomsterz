@@ -92,6 +92,30 @@ public class ModSounds {
             registerSoundEvent("emabri_hit");
     public static final RegistryObject<SoundEvent> EMABRI_IDLE =
             registerSoundEvent("emabri_idle");
+    public static final RegistryObject<SoundEvent> DERRMUES_IDLE1 =
+            registerSoundEvent("derrmues_idle1");
+    public static final RegistryObject<SoundEvent> DERRMUES_IDLE2 =
+            registerSoundEvent("derrmues_idle2");
+    public static final RegistryObject<SoundEvent> DERRMUES_ATTACK =
+            registerSoundEvent("derrmues_attack");
+    public static final RegistryObject<SoundEvent> DERRMUES_HIT =
+            registerSoundEvent("derrmues_hit");
+    public static final RegistryObject<SoundEvent> DERRMUES_DEATH =
+            registerSoundEvent("derrmues_death");
+    public static final RegistryObject<SoundEvent> PIARA_DEATH =
+            registerSoundEvent("piara_death");
+    public static final RegistryObject<SoundEvent> PIARA_IDLE =
+            registerSoundEvent("piara_idle");
+    public static final RegistryObject<SoundEvent> PIARA_HIT =
+            registerSoundEvent("piara_hit");
+    public static final RegistryObject<SoundEvent> PIARA_ATTACK =
+            registerSoundEvent("piara_attack");
+    public static final RegistryObject<SoundEvent> OSIPITI_HIT =
+            registerSoundEvent("osipiti_hit");
+    public static final RegistryObject<SoundEvent> OSIPITI_IDLE =
+            registerSoundEvent("osipiti_idle");
+    public static final RegistryObject<SoundEvent> OSIPITI_ATTACK =
+            registerSoundEvent("osipiti_attack");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Nomsterz.MOD_ID, name)));
     }

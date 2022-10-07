@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:ahagrioq_fin"},
+    {"item": "minecraft:gold_block"},
+    {"item": "nomsterz:nyanga_antler"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "nomsterz:natshai_skin"},
+    {"item": "nomsterz:ohanush_hand"},
+    {"item": "nomsterz:piara_head"},
+    {"item": "nomsterz:swerdarm_sword_piece"}
+  ],
+  "output": {
+    "item": "nomsterz:summoning_altar",
+    "count": 1
+  }
+}

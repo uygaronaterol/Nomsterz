@@ -13,6 +13,7 @@
   "entity.nomsterz.ivekroc": "Ivekroc",
   "entity.nomsterz.ahagrioq": "Ahagrioq",
   "entity.nomsterz.emabri": "Emabri",
+  "entity.nomsterz.derrmues": "Derrmues",
 
 
   "block.nomsterz.farmers_log": "Farmers Log",
@@ -52,6 +53,9 @@
   "item.nomsterz.cooked_ahagrioq_meat": "Cooked Ahagrioq Meat",
   "item.nomsterz.raw_ivekroc_meat": "Raw Ivekroc Meat",
   "item.nomsterz.cooked_ivekroc_meat": "Cooked Ivekroc Meat",
+  "item.nomsterz.raw_derrmues_meat": "Raw Derrmues Meat",
+  "item.nomsterz.cooked_derrmues_meat": "Cooked Derrmues Meat",
+
 
   "item.nomsterz.dhirta": "Dhirta",
   "item.nomsterz.ghoga_spit": "Ghoga Spit",
@@ -61,6 +65,10 @@
   "item.nomsterz.ivekroc_horn": "Ivekroc Horn",
   "item.nomsterz.ahagrioq_fin": "Ahagrioq Fin",
   "item.nomsterz.emabri_shell": "Emabri Shell",
+  "item.nomsterz.derrmues_egg": "Derrmues Egg",
+  "item.nomsterz.derrmues_tooth": "Derrmues Tooth",
+  "item.nomsterz.piara_head": "Piara Head",
+  "item.nomsterz.osipiti_tree": "Osipiti Tree",
 
   "block.nomsterz.dhirta_crop": "Dhirta Crop",
   "block.nomsterz.ilgrosu_crop": "Ilgrosu Crop",
@@ -88,6 +96,10 @@
   "item.nomsterz.ivekroc_spawn_egg": "Ivekroc Spawn Egg",
   "item.nomsterz.emabri_spawn_egg": "Emabri Spawn Egg",
   "item.nomsterz.ahagrioq_spawn_egg": "Ahagrioq Spawn Egg",
+  "item.nomsterz.derrmues_spawn_egg": "Derrmues Spawn Egg",
+  "item.nomsterz.derrmues_egg_spawn_egg": "Derrmues Egg Spawn Egg",
+  "item.nomsterz.piara_spawn_egg": "Piara Spawn Egg",
+  "item.nomsterz.osipiti_spawn_egg": "Osipiti Spawn Egg",
 
   "item.nomsterz.nomster_essence": "Nomster Essence",
   "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
@@ -107,6 +119,11 @@
   "item.nomsterz.laus_shield": "Laus Shield",
   "item.nomsterz.shield_of_regeneration": "Shield of Regeneration",
   "item.nomsterz.ilgrosu": "Ilgrosu",
+  "item.nomsterz.derrmues_summoning_key": "Derrmues Summoning Key",
+  "item.nomsterz.raw_piara_meat": "Raw Piara Meat",
+  "item.nomsterz.raw_osipiti_meat": "Raw Osipiti Meat",
+  "item.nomsterz.cooked_osipiti_meat": "Cooked Osipiti Meat",
+  "item.nomsterz.cooked_piara_meat": "Cooked Piara Meat",
 
 
   "sounds.nomsterz.nyanga_idle": "Nyanga Idle",

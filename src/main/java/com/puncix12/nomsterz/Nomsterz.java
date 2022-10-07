@@ -78,6 +78,11 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.AHAGRIOQ.get(), AhagrioqRenderer::new);
             EntityRenderers.register(ModEntityTypes.EMABRI.get(), EmabriRenderer::new);
             EntityRenderers.register(ModEntityTypes.IVEKROC.get(), IvekrocRenderer::new);
+            EntityRenderers.register(ModEntityTypes.DERRMUES.get(), DerrmuesRenderer::new);
+            EntityRenderers.register(ModEntityTypes.OSIPITI.get(), OsipitiRenderer::new);
+            EntityRenderers.register(ModEntityTypes.PIARA.get(), PiaraRenderer::new);
+
+            EntityRenderers.register(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
             EntityRenderers.register(ModEntityTypes.ROHARK_QUILL_PROJECTILE.get(), RoharkQuillProjectileRenderer::new);

@@ -190,7 +190,7 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
 
                     return interactionresult;
                 }
-                else if(itemstack.isEmpty() && !this.isInSittingPose()) {
+                else if(itemstack.isEmpty() && !this.isInSittingPose() && !this.isBaby()) {
                     this.doPlayerRide(p_30412_);
                     if(this.isInWater()){
                         this.setOrderedToSit(false);

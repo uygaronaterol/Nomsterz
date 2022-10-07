@@ -63,6 +63,23 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("ivekroc",
                     () -> EntityType.Builder.of(IvekrocEntity::new, MobCategory.CREATURE).sized(1f,1f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "ivekroc").toString()));
+    public static final RegistryObject<EntityType<DerrmuesEntity>> DERRMUES =
+            ENTITY_TYPES.register("derrmues",
+                    () -> EntityType.Builder.of(DerrmuesEntity::new, MobCategory.CREATURE).sized(3.5f,4f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "derrmues").toString()));
+    public static final RegistryObject<EntityType<OsipitiEntity>> OSIPITI =
+            ENTITY_TYPES.register("osipiti",
+                    () -> EntityType.Builder.of(OsipitiEntity::new, MobCategory.CREATURE).sized(1.4f,1f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "osipiti").toString()));
+    public static final RegistryObject<EntityType<PiaraEntity>> PIARA =
+            ENTITY_TYPES.register("piara",
+                    () -> EntityType.Builder.of(PiaraEntity::new, MobCategory.CREATURE).sized(0.4f,0.4f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "piara").toString()));
+
+    public static final RegistryObject<EntityType<DerrmuesEggEntity>> DERRMUES_EGG =
+            ENTITY_TYPES.register("derrmues_egg",
+                    () -> EntityType.Builder.of(DerrmuesEggEntity::new, MobCategory.CREATURE).sized(2f,2f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "derrmues_egg").toString()));
 
 
     public static final RegistryObject<EntityType<GhogaSpitProjectile>> GHOGA_SPIT_PROJECTILE = ENTITY_TYPES.register("ghoga_spit_projectile",

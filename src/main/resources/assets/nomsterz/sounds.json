@@ -238,5 +238,77 @@
     "sounds": [
       "nomsterz:emabri_idle"
     ]
+  },
+  "derrmues_idle1": {
+    "subtitle": "nomsterz.derrmues_idle1",
+    "sounds": [
+      "nomsterz:derrmues_idle1"
+    ]
+  },
+  "derrmues_idle2": {
+    "subtitle": "nomsterz.derrmues_idle2",
+    "sounds": [
+      "nomsterz:derrmues_idle2"
+    ]
+  },
+  "derrmues_hit": {
+    "subtitle": "nomsterz.derrmues_hit",
+    "sounds": [
+      "nomsterz:derrmues_hit"
+    ]
+  },
+  "derrmues_death": {
+    "subtitle": "nomsterz.derrmues_death",
+    "sounds": [
+      "nomsterz:derrmues_death"
+    ]
+  },
+  "derrmues_attack": {
+    "subtitle": "nomsterz.derrmues_attack",
+    "sounds": [
+      "nomsterz:derrmues_attack"
+    ]
+  },
+  "piara_attack": {
+    "subtitle": "nomsterz.piara_attack",
+    "sounds": [
+      "nomsterz:piara_attack"
+    ]
+  },
+  "piara_death": {
+    "subtitle": "nomsterz.piara_death",
+    "sounds": [
+      "nomsterz:piara_death"
+    ]
+  },
+  "piara_idle": {
+    "subtitle": "nomsterz.piara_idle",
+    "sounds": [
+      "nomsterz:piara_idle"
+    ]
+  },
+  "piara_hit": {
+    "subtitle": "nomsterz.piara_hit",
+    "sounds": [
+      "nomsterz:piara_hit"
+    ]
+  },
+  "osipiti_idle": {
+    "subtitle": "nomsterz.osipiti_idle",
+    "sounds": [
+      "nomsterz:osipiti_idle"
+    ]
+  },
+  "osipiti_hit": {
+    "subtitle": "nomsterz.osipiti_hit",
+    "sounds": [
+      "nomsterz:osipiti_hit"
+    ]
+  },
+  "osipiti_attack": {
+    "subtitle": "nomsterz.osipiti_attack",
+    "sounds": [
+      "nomsterz:osipiti_attack"
+    ]
   }
 }

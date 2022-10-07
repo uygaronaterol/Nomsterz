@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:natshai_skin"},
+    {"item": "nomsterz:rohark_quill"},
+    {"item": "nomsterz:ohanush_hand"},
+    {"item": "nomsterz:swerdarm_sword_piece"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "nomsterz:yonsi_claw"},
+    {"item": "minecraft:sunflower"},
+    {"item": "nomsterz:swerdarm_sword_piece"}
+  ],
+  "output": {
+    "item": "nomsterz:derrmues_summoning_key",
+    "count": 1
+  }
+}
