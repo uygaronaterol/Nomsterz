@@ -55,8 +55,12 @@
   "item.nomsterz.cooked_ivekroc_meat": "Cooked Ivekroc Meat",
   "item.nomsterz.raw_derrmues_meat": "Raw Derrmues Meat",
   "item.nomsterz.cooked_derrmues_meat": "Cooked Derrmues Meat",
-
-
+  "item.nomsterz.raw_bekor_meat": "Raw Bekor Meat",
+  "item.nomsterz.cooked_bekor_meat": "Cooked Bekor Meat",
+  "item.nomsterz.raw_agwo_meat": "Raw Agwo Meat",
+  "item.nomsterz.cooked_agwo_meat": "Cooked Agwo Meat",
+  "item.nomsterz.raw_wapaulendo_meat": "Raw Wapaulendo Meat",
+  "item.nomsterz.cooked_wapaulendo_meat": "Cooked Wapaulendo Meat",
   "item.nomsterz.dhirta": "Dhirta",
   "item.nomsterz.ghoga_spit": "Ghoga Spit",
   "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
@@ -66,6 +70,12 @@
   "item.nomsterz.ahagrioq_fin": "Ahagrioq Fin",
   "item.nomsterz.emabri_shell": "Emabri Shell",
   "item.nomsterz.derrmues_egg": "Derrmues Egg",
+  "item.nomsterz.bekor_egg": "Bekor Egg",
+  "item.nomsterz.agwo_fang": "Agwo Fang",
+  "item.nomsterz.wapaulendo_tail": "Wapaulendo Tail",
+  "item.nomsterz.nomster_sword": "Nomster Sword",
+  "item.nomsterz.nomster_sword_handle": "Nomster Sword Handle",
+
   "item.nomsterz.derrmues_tooth": "Derrmues Tooth",
   "item.nomsterz.piara_head": "Piara Head",
   "item.nomsterz.osipiti_tree": "Osipiti Tree",
@@ -100,11 +110,18 @@
   "item.nomsterz.derrmues_egg_spawn_egg": "Derrmues Egg Spawn Egg",
   "item.nomsterz.piara_spawn_egg": "Piara Spawn Egg",
   "item.nomsterz.osipiti_spawn_egg": "Osipiti Spawn Egg",
+  "item.nomsterz.bekor_spawn_egg": "Bekor Spawn Egg",
+  "item.nomsterz.bekor_egg_spawn_egg": "Bekor Egg Spawn Egg",
+  "item.nomsterz.wapaulendo_spawn_egg": "Wapaulendo Spawn Egg",
+  "item.nomsterz.agwo_spawn_egg": "Agwo Spawn Egg",
 
   "item.nomsterz.nomster_essence": "Nomster Essence",
   "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
   "item.nomsterz.nyanga_antler": "Nyanga Antler",
-
+  "item.nomsterz.bekor_eye_piece": "Bekor Eye Piece",
+  "item.nomsterz.bekor_summoning_key": "Bekor Summoning Key",
+  "item.nomsterz.pellatt_beak": "Pellatt Beak",
+  "block.nomsterz.summoning_altar": "Summoning Altar",
   "item.nomsterz.meat_package": "MeatPackage",
   "item.nomsterz.warped_sword": "Warped Sword",
   "item.nomsterz.iron_laus_ring": "Iron Laus Ring",
@@ -124,6 +141,7 @@
   "item.nomsterz.raw_osipiti_meat": "Raw Osipiti Meat",
   "item.nomsterz.cooked_osipiti_meat": "Cooked Osipiti Meat",
   "item.nomsterz.cooked_piara_meat": "Cooked Piara Meat",
+  "enchantment.nomsterz.nomster_sword_sharpness": "Nomster Sword Sharpness",
 
 
   "sounds.nomsterz.nyanga_idle": "Nyanga Idle",

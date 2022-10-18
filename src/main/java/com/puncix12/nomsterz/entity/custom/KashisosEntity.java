@@ -116,7 +116,7 @@ public class KashisosEntity extends TamableAnimal implements IAnimatable, Player
     }
 
     public int getExperienceReward() {
-        return 5 + this.level.random.nextInt(5);
+        return 7 + this.level.random.nextInt(5);
     }
 
     @Override

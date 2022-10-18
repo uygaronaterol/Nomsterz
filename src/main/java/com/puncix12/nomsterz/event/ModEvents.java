@@ -106,8 +106,13 @@ public class ModEvents {
                         stack6, 10, 5, 0.02F));
                 ItemStack stack7 = new ItemStack(ModBlocks.LAUS_SAPLING.get().asItem(), 1);
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
-                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 64),
+                        new ItemStack(ModItems.NOMSTER_ESSENCE.get(), 34),
                         stack7, 10, 5, 0.02F));
+                ItemStack stack8 = new ItemStack(ModItems.NOMSTER_SWORD_HANDLE.get(), 1);
+
+                trades.get(4).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(Items.EMERALD, 52),
+                        stack8, 2, 5, 0.02F));
             }
         }
     }
@@ -131,8 +136,11 @@ public class ModEvents {
             event.put(ModEntityTypes.DERRMUES.get(), DerrmuesEntity.setAttributes());
             event.put(ModEntityTypes.OSIPITI.get(), OsipitiEntity.setAttributes());
             event.put(ModEntityTypes.PIARA.get(), PiaraEntity.setAttributes());
+            event.put(ModEntityTypes.BEKOR.get(), BekorEntity.setAttributes());
+            event.put(ModEntityTypes.WAPAULENDO.get(), WapaulendoEntity.setAttributes());
+            event.put(ModEntityTypes.AGWO.get(), AgwoEntity.setAttributes());
 
-
+            event.put(ModEntityTypes.BEKOR_EGG.get(), BekorEggEntity.setAttributes());
             event.put(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggEntity.setAttributes());
 
         }

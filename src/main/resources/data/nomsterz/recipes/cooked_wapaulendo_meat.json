@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 360,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "nomsterz:raw_wapaulendo_meat"
+  },
+  "result": "nomsterz:cooked_wapaulendo_meat"
+}

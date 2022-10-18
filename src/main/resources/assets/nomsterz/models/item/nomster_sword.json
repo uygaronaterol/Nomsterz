@@ -1,0 +1,146 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "nomsterz:item/nomster_sword_handle",
+		"1": "nomsterz:item/nomster_sword",
+		"particle": "nomsterz:item/nomster_sword_handle"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 4, 9],
+			"faces": {
+				"north": {"uv": [4, 0, 6, 4], "texture": "#0"},
+				"east": {"uv": [4, 4, 6, 8], "texture": "#0"},
+				"south": {"uv": [0, 6, 2, 10], "texture": "#0"},
+				"west": {"uv": [6, 0, 8, 4], "texture": "#0"},
+				"up": {"uv": [4, 8, 2, 6], "texture": "#0"},
+				"down": {"uv": [10, 2, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 4, 6.9],
+			"to": [10, 5, 9.1],
+			"faces": {
+				"north": {"uv": [5, 8, 9, 9], "texture": "#0"},
+				"east": {"uv": [8, 9, 10.25, 10], "texture": "#0"},
+				"south": {"uv": [9, 4, 13, 5], "texture": "#0"},
+				"west": {"uv": [9, 8, 11.25, 9], "texture": "#0"},
+				"up": {"uv": [4, 2.25, 0, 0], "texture": "#0"},
+				"down": {"uv": [4, 3, 0, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [9.1, 4.8, 7],
+			"to": [11.8, 5.8, 9],
+			"rotation": {"angle": 45, "axis": "z", "origin": [10.5, 5.5, 8]},
+			"faces": {
+				"north": {"uv": [5, 9, 7.75, 10], "texture": "#0"},
+				"east": {"uv": [0, 10, 2, 11], "texture": "#0"},
+				"south": {"uv": [9, 5, 11.75, 6], "texture": "#0"},
+				"west": {"uv": [2, 10, 4, 11], "texture": "#0"},
+				"up": {"uv": [8.75, 6, 6, 4], "texture": "#0"},
+				"down": {"uv": [8.75, 6, 6, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4.2, 4.8, 7],
+			"to": [6.9, 5.8, 9],
+			"rotation": {"angle": -45, "axis": "z", "origin": [5.5, 5.5, 8]},
+			"faces": {
+				"north": {"uv": [9, 6, 11.75, 7], "texture": "#0"},
+				"east": {"uv": [10, 2, 12, 3], "texture": "#0"},
+				"south": {"uv": [9, 7, 11.75, 8], "texture": "#0"},
+				"west": {"uv": [10, 3, 12, 4], "texture": "#0"},
+				"up": {"uv": [10.75, 2, 8, 0], "texture": "#0"},
+				"down": {"uv": [4.75, 8, 2, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 5, 7.3],
+			"to": [9, 10, 8.7],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#1"},
+				"east": {"uv": [6, 0, 7.5, 5], "texture": "#1"},
+				"south": {"uv": [2, 0, 4, 5], "texture": "#1"},
+				"west": {"uv": [6, 5, 7.5, 10], "texture": "#1"},
+				"up": {"uv": [12, 6.5, 10, 5], "texture": "#1"},
+				"down": {"uv": [8, 10, 6, 11.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.2, 20, 7.5],
+			"to": [8.8, 23, 8.5],
+			"faces": {
+				"north": {"uv": [2, 10, 3.5, 13], "texture": "#1"},
+				"east": {"uv": [10, 7, 11, 10], "texture": "#1"},
+				"south": {"uv": [4, 10, 5.5, 13], "texture": "#1"},
+				"west": {"uv": [8, 10, 9, 13], "texture": "#1"},
+				"up": {"uv": [13.5, 1, 12, 0], "texture": "#1"},
+				"down": {"uv": [13.5, 1, 12, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.1, 15, 7.4],
+			"to": [8.9, 20, 8.6],
+			"faces": {
+				"north": {"uv": [2, 5, 3.75, 10], "texture": "#1"},
+				"east": {"uv": [8, 0, 9.25, 5], "texture": "#1"},
+				"south": {"uv": [4, 5, 5.75, 10], "texture": "#1"},
+				"west": {"uv": [8, 5, 9.25, 10], "texture": "#1"},
+				"up": {"uv": [12.75, 10.25, 11, 9], "texture": "#1"},
+				"down": {"uv": [12.75, 11, 11, 12.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 10, 7.4],
+			"to": [9, 15, 8.6],
+			"faces": {
+				"north": {"uv": [4, 0, 6, 5], "texture": "#1"},
+				"east": {"uv": [0, 10, 1.25, 15], "texture": "#1"},
+				"south": {"uv": [0, 5, 2, 10], "texture": "#1"},
+				"west": {"uv": [10, 0, 11.25, 5], "texture": "#1"},
+				"up": {"uv": [11, 11.25, 9, 10], "texture": "#1"},
+				"down": {"uv": [13, 7, 11, 8.25], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4.75, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [0, -9.25, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, -9.25, 0]
+		},
+		"gui": {
+			"translation": [0, -2.75, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"fixed": {
+			"translation": [0, -3, 0],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "nomsterSwordHandle",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		},
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [4, 5, 6, 7]
+		}
+	]
+}

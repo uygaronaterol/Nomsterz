@@ -90,7 +90,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
         return false;
     }
     public int getExperienceReward() {
-        return 10 + this.level.random.nextInt(5);
+        return 3 + this.level.random.nextInt(5);
     }
 
     public static AttributeSupplier setAttributes() {

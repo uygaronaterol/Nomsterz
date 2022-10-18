@@ -141,7 +141,7 @@ public class DerrmuesEntity extends TamableAnimal implements IAnimatable, Player
     }
 
     public int getExperienceReward() {
-        return 5 + this.level.random.nextInt(5);
+        return 55 + this.level.random.nextInt(5);
     }
 
     @Override

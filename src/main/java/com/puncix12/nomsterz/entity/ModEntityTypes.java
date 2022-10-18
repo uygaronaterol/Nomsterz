@@ -75,12 +75,28 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("piara",
                     () -> EntityType.Builder.of(PiaraEntity::new, MobCategory.CREATURE).sized(0.4f,0.4f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "piara").toString()));
+    public static final RegistryObject<EntityType<BekorEntity>> BEKOR =
+            ENTITY_TYPES.register("bekor",
+                    () -> EntityType.Builder.of(BekorEntity::new, MobCategory.CREATURE).sized(3.4f,3.4f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "bekor").toString()));
+    public static final RegistryObject<EntityType<WapaulendoEntity>> WAPAULENDO =
+            ENTITY_TYPES.register("wapaulendo",
+                    () -> EntityType.Builder.of(WapaulendoEntity::new, MobCategory.CREATURE).sized(1f,0.6f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "wapaulendo").toString()));
+    public static final RegistryObject<EntityType<AgwoEntity>> AGWO =
+            ENTITY_TYPES.register("agwo",
+                    () -> EntityType.Builder.of(AgwoEntity::new, MobCategory.CREATURE).sized(1f,0.3f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "agwo").toString()));
+
 
     public static final RegistryObject<EntityType<DerrmuesEggEntity>> DERRMUES_EGG =
             ENTITY_TYPES.register("derrmues_egg",
-                    () -> EntityType.Builder.of(DerrmuesEggEntity::new, MobCategory.CREATURE).sized(2f,2f)
+                    () -> EntityType.Builder.of(DerrmuesEggEntity::new, MobCategory.CREATURE).sized(0.5f,0.5f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "derrmues_egg").toString()));
-
+    public static final RegistryObject<EntityType<BekorEggEntity>> BEKOR_EGG =
+            ENTITY_TYPES.register("bekor_egg",
+                    () -> EntityType.Builder.of(BekorEggEntity::new, MobCategory.CREATURE).sized(0.5f,0.5f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "bekor_egg").toString()));
 
     public static final RegistryObject<EntityType<GhogaSpitProjectile>> GHOGA_SPIT_PROJECTILE = ENTITY_TYPES.register("ghoga_spit_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<GhogaSpitProjectile>)
@@ -88,6 +104,10 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<RoharkQuillProjectile>> ROHARK_QUILL_PROJECTILE = ENTITY_TYPES.register("rohark_quill_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<RoharkQuillProjectile>)
                     RoharkQuillProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("rohark_quill_projectile"));
+    public static final RegistryObject<EntityType<BekorProjectile>> BEKOR_PROJECTILE = ENTITY_TYPES.register("bekor_projectile",
+            () -> EntityType.Builder.of((EntityType.EntityFactory<BekorProjectile>)
+                    BekorProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("bekor_projectile"));
+
     public static void register(IEventBus bus){
         ENTITY_TYPES.register(bus);
     }

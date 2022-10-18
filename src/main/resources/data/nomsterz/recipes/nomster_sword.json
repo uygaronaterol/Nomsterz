@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:bekor_eye_piece"},
+    {"item": "nomsterz:wapaulendo_tail"},
+    {"item": "nomsterz:ahagrioq_fin"},
+    {"item": "nomsterz:derrmues_tooth"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "nomsterz:nomster_sword_handle"},
+    {"item": "nomsterz:agwo_fang"},
+    {"item": "nomsterz:ghoga_spit"},
+    {"item": "nomsterz:ohanush_hand"}
+  ],
+  "output": {
+    "item": "nomsterz:nomster_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#minecraft:is_desert",
+  "entity": {
+    "type": "nomsterz:wapaulendo",
+    "weight": 1,
+    "minCount": 4,
+    "maxCount": 5
+  }
+}

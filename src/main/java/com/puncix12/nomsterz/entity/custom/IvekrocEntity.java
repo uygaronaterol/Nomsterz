@@ -89,7 +89,7 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
         return false;
     }
     public int getExperienceReward() {
-        return 10 + this.level.random.nextInt(5);
+        return 9 + this.level.random.nextInt(5);
     }
 
     public static AttributeSupplier setAttributes() {

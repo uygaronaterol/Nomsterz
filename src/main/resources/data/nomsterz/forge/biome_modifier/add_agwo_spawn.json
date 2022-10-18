@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#minecraft:is_desert",
+  "entity": {
+    "type": "nomsterz:agwo",
+    "weight": 3,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

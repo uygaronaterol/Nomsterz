@@ -67,6 +67,18 @@ public class ModFoods {
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 0), 1F).meat().build();
     public static final FoodProperties COOKED_PIARA_MEAT = (new FoodProperties.Builder()).nutrition(5).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_BEKOR_MEAT = (new FoodProperties.Builder()).nutrition(4).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_BEKOR_MEAT = (new FoodProperties.Builder()).nutrition(10).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.POISON, 1600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_AGWO_MEAT = (new FoodProperties.Builder()).nutrition(2).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_AGWO_MEAT = (new FoodProperties.Builder()).nutrition(5).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_WAPAULENDO_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_WAPAULENDO_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1F).meat().build();
 
     public static final FoodProperties DHIRTA = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.3f).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 1F).build();

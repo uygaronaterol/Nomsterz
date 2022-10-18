@@ -3,6 +3,7 @@ package com.puncix12.nomsterz;
 import com.mojang.logging.LogUtils;
 import com.puncix12.nomsterz.block.ModBlocks;
 import com.puncix12.nomsterz.block.entity.ModBlockEntities;
+import com.puncix12.nomsterz.enchantment.ModEnchantments;
 import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.entity.client.*;
 import com.puncix12.nomsterz.item.ModItems;
@@ -16,6 +17,9 @@ import com.puncix12.nomsterz.world.feature.ModConfiguredFeatures;
 import com.puncix12.nomsterz.world.feature.ModPlacedFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -42,6 +46,7 @@ public class Nomsterz
         ModPlacedFeatures.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModEnchantments.register(modEventBus);
         ModEntityTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModSounds.register(modEventBus);
@@ -55,7 +60,53 @@ public class Nomsterz
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-                ModVillagers.registerPOIs();
+
+            SpawnPlacements.register(ModEntityTypes.AGWO.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.BEKOR.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.DERRMUES.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.GHOGA.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.KASHISOS.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.NATSHAI.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.NYANGA.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.OHANUSH.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.OSIPITI.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.PELLATT.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.PIARA.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.ROHARK.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.SWERDARM.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.WAPAULENDO.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.YONSI.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
+            ModVillagers.registerPOIs();
         });
     }
 
@@ -81,11 +132,16 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.DERRMUES.get(), DerrmuesRenderer::new);
             EntityRenderers.register(ModEntityTypes.OSIPITI.get(), OsipitiRenderer::new);
             EntityRenderers.register(ModEntityTypes.PIARA.get(), PiaraRenderer::new);
+            EntityRenderers.register(ModEntityTypes.BEKOR.get(), BekorRenderer::new);
+            EntityRenderers.register(ModEntityTypes.WAPAULENDO.get(), WapaulendoRenderer::new);
+            EntityRenderers.register(ModEntityTypes.AGWO.get(), AgwoRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggRenderer::new);
+            EntityRenderers.register(ModEntityTypes.BEKOR_EGG.get(), BekorEggRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
             EntityRenderers.register(ModEntityTypes.ROHARK_QUILL_PROJECTILE.get(), RoharkQuillProjectileRenderer::new);
+            EntityRenderers.register(ModEntityTypes.BEKOR_PROJECTILE.get(), BekorProjectileRenderer::new);
 
 
             MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);

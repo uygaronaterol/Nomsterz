@@ -43,6 +43,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
     public GhogaEntity(EntityType<? extends TamableAnimal> p_27557_, Level p_27558_) {
         super(p_27557_, p_27558_);
+        this.maxUpStep = 1.0F;
 
     }
     @Override

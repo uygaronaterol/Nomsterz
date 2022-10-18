@@ -49,7 +49,10 @@ public class GhogaSpitProjectile extends AbstractArrow {
         this.discard();
 
     }
-
+    @Override
+    public void setBaseDamage(double pBaseDamage) {
+        super.setBaseDamage(6);
+    }
     @Override
     protected ItemStack getPickupItem() {
         return ModItems.GHOGA_SPIT.get().getDefaultInstance();
