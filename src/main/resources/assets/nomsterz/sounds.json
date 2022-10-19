@@ -310,5 +310,65 @@
     "sounds": [
       "nomsterz:osipiti_attack"
     ]
+  },
+  "wapaulendo_attack": {
+    "subtitle": "nomsterz.wapaulendo_attack",
+    "sounds": [
+      "nomsterz:wapaulendo_attack"
+    ]
+  },
+  "wapaulendo_hit": {
+    "subtitle": "nomsterz.wapaulendo_hit",
+    "sounds": [
+      "nomsterz:wapaulendo_hit"
+    ]
+  },
+  "wapaulendo_idle": {
+    "subtitle": "nomsterz.wapaulendo_idle",
+    "sounds": [
+      "nomsterz:wapaulendo_idle"
+    ]
+  },
+  "agwo_attack": {
+    "subtitle": "nomsterz.agwo_attack",
+    "sounds": [
+      "nomsterz:agwo_attack"
+    ]
+  },
+  "agwo_idle": {
+    "subtitle": "nomsterz.agwo_idle",
+    "sounds": [
+      "nomsterz:agwo_idle"
+    ]
+  },
+  "agwo_hit": {
+    "subtitle": "nomsterz.agwo_hit",
+    "sounds": [
+      "nomsterz:agwo_hit"
+    ]
+  },
+  "bekor_attack": {
+    "subtitle": "nomsterz.bekor_attack",
+    "sounds": [
+      "nomsterz:bekor_attack"
+    ]
+  },
+  "bekor_idle": {
+    "subtitle": "nomsterz.bekor_idle",
+    "sounds": [
+      "nomsterz:bekor_idle"
+    ]
+  },
+  "bekor_death": {
+    "subtitle": "nomsterz.bekor_death",
+    "sounds": [
+      "nomsterz:bekor_death"
+    ]
+  },
+  "bekor_hit": {
+    "subtitle": "nomsterz.bekor_hit",
+    "sounds": [
+      "nomsterz:bekor_hit"
+    ]
   }
 }

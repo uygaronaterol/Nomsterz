@@ -72,7 +72,7 @@ public class AgwoEntity extends TamableAnimal implements IAnimatable {
                 .add(Attributes.MAX_HEALTH, 10.0D)
                 .add(Attributes.ATTACK_DAMAGE, 5f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.665f)
+                .add(Attributes.MOVEMENT_SPEED, 0.565f)
                 .add(Attributes.FOLLOW_RANGE, 20000f).build();
     }
     public boolean doHurtTarget(Entity pEntity) {
@@ -220,10 +220,6 @@ public class AgwoEntity extends TamableAnimal implements IAnimatable {
         return PlayState.STOP;
     }
 
-
-
-
-
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController(this, "controller",
@@ -237,7 +233,7 @@ public class AgwoEntity extends TamableAnimal implements IAnimatable {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.agwo.attack", false));
-            playSound(ModSounds.NATSHAI_HIT.get());
+            playSound(ModSounds.AGWO_ATTACK.get());
             this.swinging = false;
         }
         return PlayState.CONTINUE;
@@ -260,18 +256,18 @@ public class AgwoEntity extends TamableAnimal implements IAnimatable {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return ModSounds.NATSHAI_IDLE.get();
+        return ModSounds.AGWO_IDLE.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.NATSHAI_HIT.get();
+        return ModSounds.AGWO_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.NATSHAI_DEATH.get();
+        return ModSounds.AGWO_HIT.get();
     }
 }

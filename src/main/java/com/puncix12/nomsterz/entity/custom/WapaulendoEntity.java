@@ -83,10 +83,8 @@ public class WapaulendoEntity extends TamableAnimal implements IAnimatable {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal( 0, new FloatGoal(this));
-
         this.goalSelector.addGoal( 1, new SitWhenOrderedToGoal(this));
         this.goalSelector.addGoal( 2, new BreedGoal(this, 1.0D));
-
         this.goalSelector.addGoal( 4, new FollowOwnerGoal(this, 0.7,2,100,false));
         this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 0.6D, false));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
@@ -100,10 +98,7 @@ public class WapaulendoEntity extends TamableAnimal implements IAnimatable {
         this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, NyangaEntity.class, true));
         this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Cow.class, true));
         this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, Sheep.class, true));
-
-
     }
-
 
     @Nullable
     @Override
@@ -224,7 +219,7 @@ public class WapaulendoEntity extends TamableAnimal implements IAnimatable {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.wapaulendo.attack", false));
-            playSound(ModSounds.NATSHAI_HIT.get());
+            playSound(ModSounds.WAPAULENDO_ATTACK.get());
             this.swinging = false;
         }
         return PlayState.CONTINUE;
@@ -247,18 +242,18 @@ public class WapaulendoEntity extends TamableAnimal implements IAnimatable {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return ModSounds.NATSHAI_IDLE.get();
+        return ModSounds.WAPAULENDO_IDLE.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.NATSHAI_HIT.get();
+        return ModSounds.WAPAULENDO_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.NATSHAI_DEATH.get();
+        return ModSounds.WAPAULENDO_HIT.get();
     }
 }

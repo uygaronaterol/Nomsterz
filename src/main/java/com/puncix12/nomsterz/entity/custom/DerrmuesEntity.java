@@ -337,7 +337,7 @@ public class DerrmuesEntity extends TamableAnimal implements IAnimatable, Player
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.derrmues.attack", false));
             this.swinging = false;
-            playSound(ModSounds.KASHISOS_HIT.get());
+            playSound(ModSounds.DERRMUES_ATTACK.get());
         }
         return PlayState.CONTINUE;
     }

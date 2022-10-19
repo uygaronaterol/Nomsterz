@@ -116,6 +116,26 @@ public class ModSounds {
             registerSoundEvent("osipiti_idle");
     public static final RegistryObject<SoundEvent> OSIPITI_ATTACK =
             registerSoundEvent("osipiti_attack");
+    public static final RegistryObject<SoundEvent> WAPAULENDO_ATTACK =
+            registerSoundEvent("wapaulendo_attack");
+    public static final RegistryObject<SoundEvent> WAPAULENDO_HIT =
+            registerSoundEvent("wapaulendo_hit");
+    public static final RegistryObject<SoundEvent> WAPAULENDO_IDLE =
+            registerSoundEvent("wapaulendo_idle");
+    public static final RegistryObject<SoundEvent> AGWO_IDLE =
+            registerSoundEvent("agwo_idle");
+    public static final RegistryObject<SoundEvent> AGWO_ATTACK =
+            registerSoundEvent("agwo_attack");
+    public static final RegistryObject<SoundEvent> AGWO_HIT =
+            registerSoundEvent("agwo_hit");
+    public static final RegistryObject<SoundEvent> BEKOR_ATTACK =
+            registerSoundEvent("bekor_attack");
+    public static final RegistryObject<SoundEvent> BEKOR_HIT =
+            registerSoundEvent("bekor_hit");
+    public static final RegistryObject<SoundEvent> BEKOR_IDLE =
+            registerSoundEvent("bekor_idle");
+    public static final RegistryObject<SoundEvent> BEKOR_DEATH =
+            registerSoundEvent("bekor_death");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Nomsterz.MOD_ID, name)));
     }

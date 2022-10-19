@@ -101,7 +101,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
                 .add(Attributes.MOVEMENT_SPEED, 0.115f)
                 .add(Attributes.JUMP_STRENGTH, 0.5f)
                 .add(Attributes.ARMOR, 6f)
-                .add(Attributes.FOLLOW_RANGE, 20000f).build();
+                .add(Attributes.FOLLOW_RANGE, 50f).build();
     }
 
     @Override

@@ -101,7 +101,7 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
                 .add(Attributes.MOVEMENT_SPEED, 0.165f)
                 .add(Attributes.JUMP_STRENGTH, 0.5f)
                 .add(Attributes.ARMOR, 3.5f)
-                .add(Attributes.FOLLOW_RANGE, 20000f).build();
+                .add(Attributes.FOLLOW_RANGE, 100f).build();
     }
 
     @Override

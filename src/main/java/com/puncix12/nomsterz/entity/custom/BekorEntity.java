@@ -156,12 +156,11 @@ public class BekorEntity extends TamableAnimal implements IAnimatable, PlayerRid
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.getItem().equals(ModItems.RAW_SWERDARM_MEAT.get());
+        return pStack.getItem().equals(ModItems.RAW_OSIPITI_MEAT.get());
     }
 
     public InteractionResult mobInteract(Player p_30412_, InteractionHand p_30413_) {
         ItemStack itemstack = p_30412_.getItemInHand(p_30413_);
-        Item item = itemstack.getItem();
         if(isFood(itemstack)){
             return super.mobInteract(p_30412_,p_30413_);
         }
@@ -200,12 +199,12 @@ public class BekorEntity extends TamableAnimal implements IAnimatable, PlayerRid
                     return InteractionResult.sidedSuccess(this.level.isClientSide);
                 }
 
-            } else if ( itemstack.is(ModItems.MEAT_PACKAGE.get())  && this.isBaby()) {
+            } else if ( itemstack.is(ModItems.RAW_GHOGA_MEAT.get())  && this.isBaby()) {
                 if (!p_30412_.getAbilities().instabuild) {
                     itemstack.shrink(1);
                 }
 
-                if (this.random.nextInt(63) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
+                if (this.random.nextInt(7) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, p_30412_)) {
                     this.tame(p_30412_);
                     this.navigation.stop();
                     this.setTarget((LivingEntity)null);
@@ -336,7 +335,7 @@ public class BekorEntity extends TamableAnimal implements IAnimatable, PlayerRid
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.bekor.attack", false));
             this.swinging = false;
-            playSound(ModSounds.KASHISOS_HIT.get());
+            playSound(ModSounds.BEKOR_ATTACK.get());
         }
         return PlayState.CONTINUE;
     }
@@ -502,7 +501,7 @@ public class BekorEntity extends TamableAnimal implements IAnimatable, PlayerRid
             this.attackEntityWithRangedAttack(this.getTarget());
             this.attackEntityWithRangedAttack(this.getTarget());
         }
-        return ModSounds.DERRMUES_IDLE1.get();
+        return ModSounds.BEKOR_IDLE.get();
 
     }
 
@@ -510,13 +509,13 @@ public class BekorEntity extends TamableAnimal implements IAnimatable, PlayerRid
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.DERRMUES_HIT.get();
+        return ModSounds.BEKOR_HIT.get();
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.DERRMUES_DEATH.get();
+        return ModSounds.BEKOR_DEATH.get();
     }
 
     public void attackEntityWithRangedAttack(LivingEntity target) {
