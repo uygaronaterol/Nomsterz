@@ -57,6 +57,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> AGWO_FANG = ITEMS.register("agwo_fang",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> CHOLENKA_PIECE = ITEMS.register("cholenka_piece",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Spawn Eggs
     public static final RegistryObject<Item> NATSHAI_SPAWN_EGG = ITEMS.register("natshai_spawn_egg",
@@ -113,7 +115,9 @@ public class ModItems {
     public static final RegistryObject<Item> AGWO_SPAWN_EGG = ITEMS.register("agwo_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.AGWO,0xedebcb6,0xd5c496
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
-
+    public static final RegistryObject<Item> CHOLENKA_SPAWN_EGG = ITEMS.register("cholenka_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.CHOLENKA,0x50b9ff,0x2d5173
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     public static final RegistryObject<Item> DERRMUES_EGG_SPAWN_EGG = ITEMS.register("derrmues_egg_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.DERRMUES_EGG,0x3d483b,0x133716

@@ -87,7 +87,10 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("agwo",
                     () -> EntityType.Builder.of(AgwoEntity::new, MobCategory.CREATURE).sized(1f,0.3f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "agwo").toString()));
-
+    public static final RegistryObject<EntityType<CholenkaEntity>> CHOLENKA =
+            ENTITY_TYPES.register("cholenka",
+                    () -> EntityType.Builder.of(CholenkaEntity::new, MobCategory.CREATURE).sized(1f,2f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "cholenka").toString()));
 
     public static final RegistryObject<EntityType<DerrmuesEggEntity>> DERRMUES_EGG =
             ENTITY_TYPES.register("derrmues_egg",
@@ -107,7 +110,9 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<BekorProjectile>> BEKOR_PROJECTILE = ENTITY_TYPES.register("bekor_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<BekorProjectile>)
                     BekorProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("bekor_projectile"));
-
+    public static final RegistryObject<EntityType<CholenkaProjectile>> CHOLENKA_PROJECTILE = ENTITY_TYPES.register("cholenka_projectile",
+            () -> EntityType.Builder.of((EntityType.EntityFactory<CholenkaProjectile>)
+                    CholenkaProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("cholenka_projectile"));
     public static void register(IEventBus bus){
         ENTITY_TYPES.register(bus);
     }

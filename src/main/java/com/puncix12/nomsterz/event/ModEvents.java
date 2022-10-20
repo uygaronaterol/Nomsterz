@@ -139,6 +139,7 @@ public class ModEvents {
             event.put(ModEntityTypes.BEKOR.get(), BekorEntity.setAttributes());
             event.put(ModEntityTypes.WAPAULENDO.get(), WapaulendoEntity.setAttributes());
             event.put(ModEntityTypes.AGWO.get(), AgwoEntity.setAttributes());
+            event.put(ModEntityTypes.CHOLENKA.get(), CholenkaEntity.setAttributes());
 
             event.put(ModEntityTypes.BEKOR_EGG.get(), BekorEggEntity.setAttributes());
             event.put(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggEntity.setAttributes());

@@ -106,6 +106,9 @@ public class Nomsterz
             SpawnPlacements.register(ModEntityTypes.YONSI.get(),
                     SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Animal::checkAnimalSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.CHOLENKA.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
             ModVillagers.registerPOIs();
         });
     }
@@ -135,6 +138,7 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.BEKOR.get(), BekorRenderer::new);
             EntityRenderers.register(ModEntityTypes.WAPAULENDO.get(), WapaulendoRenderer::new);
             EntityRenderers.register(ModEntityTypes.AGWO.get(), AgwoRenderer::new);
+            EntityRenderers.register(ModEntityTypes.CHOLENKA.get(), CholenkaRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggRenderer::new);
             EntityRenderers.register(ModEntityTypes.BEKOR_EGG.get(), BekorEggRenderer::new);
@@ -142,6 +146,7 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
             EntityRenderers.register(ModEntityTypes.ROHARK_QUILL_PROJECTILE.get(), RoharkQuillProjectileRenderer::new);
             EntityRenderers.register(ModEntityTypes.BEKOR_PROJECTILE.get(), BekorProjectileRenderer::new);
+            EntityRenderers.register(ModEntityTypes.CHOLENKA_PROJECTILE.get(), CholenkaProjectileRenderer::new);
 
 
             MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);

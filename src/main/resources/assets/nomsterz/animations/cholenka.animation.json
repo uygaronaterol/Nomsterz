@@ -1,0 +1,336 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cholenka.walk": {
+			"animation_length": 1,
+			"bones": {
+				"neck1": {
+					"rotation": {
+						"0.0": {
+							"vector": [-2.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [5, 0, 0]
+						},
+						"1.0": {
+							"vector": [-2.5, 0, 0]
+						}
+					}
+				},
+				"neck2": {
+					"rotation": {
+						"0.0": {
+							"vector": [-5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-7.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [-5, 0, 0]
+						}
+					}
+				},
+				"neck3": {
+					"rotation": {
+						"0.0": {
+							"vector": [-7.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-5, 0, 0]
+						},
+						"1.0": {
+							"vector": [-7.5, 0, 0]
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [15, 0, 0]
+						},
+						"0.5": {
+							"vector": [12.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [15, 0, 0]
+						}
+					}
+				},
+				"trunk1": {
+					"rotation": {
+						"0.0": {
+							"vector": [10, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [10, 0, 0]
+						}
+					}
+				},
+				"trunk2": {
+					"rotation": {
+						"vector": [17.81587, -0.72182, -0.96549]
+					}
+				},
+				"trunk3": {
+					"rotation": {
+						"vector": [25, 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, -5, 0]
+						},
+						"0.5": {
+							"vector": [0, 1, -1]
+						},
+						"1.0": {
+							"vector": [0, -5, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.cholenka.idle": {
+			"animation_length": 1,
+			"bones": {
+				"neck1": {
+					"rotation": {
+						"0.0": {
+							"vector": [-7.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-17.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [-7.5, 0, 0]
+						}
+					}
+				},
+				"neck2": {
+					"rotation": {
+						"0.0": {
+							"vector": [5, 0, 0]
+						},
+						"0.5": {
+							"vector": [12.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [5, 0, 0]
+						}
+					}
+				},
+				"neck3": {
+					"rotation": {
+						"vector": [2.5, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [2.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [10, 0, 0]
+						},
+						"1.0": {
+							"vector": [2.5, 0, 0]
+						}
+					}
+				},
+				"trunk1": {
+					"rotation": {
+						"vector": [30, 0, 0]
+					}
+				},
+				"trunk2": {
+					"rotation": {
+						"vector": [30, 0, 0]
+					}
+				},
+				"trunk3": {
+					"rotation": {
+						"vector": [27.5, 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, -3, -2]
+						},
+						"0.5": {
+							"vector": [0, -1, 0]
+						},
+						"1.0": {
+							"vector": [0, -3, -2]
+						}
+					}
+				}
+			}
+		},
+		"animation.cholenka.sit": {
+			"animation_length": 1,
+			"bones": {
+				"neck1": {
+					"rotation": {
+						"0.0": {
+							"vector": [-17.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-15, 0, 0]
+						},
+						"1.0": {
+							"vector": [-17.5, 0, 0]
+						}
+					}
+				},
+				"neck2": {
+					"rotation": {
+						"0.0": {
+							"vector": [-12.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-15, 0, 0]
+						},
+						"1.0": {
+							"vector": [-12.5, 0, 0]
+						}
+					}
+				},
+				"neck3": {
+					"rotation": {
+						"vector": [-5, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [40, 0, 0]
+						},
+						"0.5": {
+							"vector": [37.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [40, 0, 0]
+						}
+					}
+				},
+				"trunk1": {
+					"rotation": {
+						"0.0": {
+							"vector": [50, 0, 0]
+						},
+						"0.5": {
+							"vector": [40, 0, 0]
+						},
+						"1.0": {
+							"vector": [50, 0, 0]
+						}
+					}
+				},
+				"trunk2": {
+					"rotation": {
+						"vector": [60, 0, 0]
+					}
+				},
+				"trunk3": {
+					"rotation": {
+						"vector": [55, 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, -10, 0]
+						},
+						"0.5": {
+							"vector": [0, -9, 0]
+						},
+						"1.0": {
+							"vector": [0, -10, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.cholenka.attack": {
+			"animation_length": 0.5,
+			"bones": {
+				"neck1": {
+					"rotation": {
+						"0.0": {
+							"vector": [-20, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"neck2": {
+					"rotation": {
+						"0.0": {
+							"vector": [-10, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"neck3": {
+					"rotation": {
+						"0.0": {
+							"vector": [-7.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [42.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"trunk1": {
+					"rotation": {
+						"0.0": {
+							"vector": [5, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"trunk2": {
+					"rotation": {
+						"0.0": {
+							"vector": [5, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, 1, 1]
+						},
+						"0.5": {
+							"vector": [0, -5, -19]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
