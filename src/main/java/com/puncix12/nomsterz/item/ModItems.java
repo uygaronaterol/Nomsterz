@@ -58,6 +58,10 @@ public class ModItems {
     public static final RegistryObject<Item> AGWO_FANG = ITEMS.register("agwo_fang",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> CHOLENKA_PIECE = ITEMS.register("cholenka_piece",
+            () -> new MeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.CHOLENKA_PIECE)));
+    public static final RegistryObject<Item> LOQAYD_HEAD = ITEMS.register("loqayd_head",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> FERRKER_SHELL = ITEMS.register("ferrker_shell",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Spawn Eggs
@@ -117,6 +121,12 @@ public class ModItems {
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> CHOLENKA_SPAWN_EGG = ITEMS.register("cholenka_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.CHOLENKA,0x50b9ff,0x2d5173
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> LOQAYD_SPAWN_EGG = ITEMS.register("loqayd_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.LOQAYD,0x6a4f34,0xf5d1a2
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> FERRKER_SPAWN_EGG = ITEMS.register("ferrker_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.FERRKER,0x482e15,0xa09f5a
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     public static final RegistryObject<Item> DERRMUES_EGG_SPAWN_EGG = ITEMS.register("derrmues_egg_spawn_egg",
@@ -237,7 +247,14 @@ public class ModItems {
             () -> new DangerousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_AGWO_MEAT)));
     public static final RegistryObject<Item> COOKED_AGWO_MEAT = ITEMS.register("cooked_agwo_meat",
             () -> new MeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_AGWO_MEAT)));
-
+    public static final RegistryObject<Item> RAW_LOQAYD_MEAT = ITEMS.register("raw_loqayd_meat",
+            () -> new DangerousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_LOQAYD_MEAT)));
+    public static final RegistryObject<Item> COOKED_LOQAYD_MEAT = ITEMS.register("cooked_loqayd_meat",
+            () -> new MeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_LOQAYD_MEAT)));
+    public static final RegistryObject<Item> RAW_FERRKER_MEAT = ITEMS.register("raw_ferrker_meat",
+            () -> new DangerousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_FERRKER_MEAT)));
+    public static final RegistryObject<Item> COOKED_FERRKER_MEAT = ITEMS.register("cooked_ferrker_meat",
+            () -> new MeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_FERRKER_MEAT)));
 
     //Nomster foods
     public static final RegistryObject<Item> MEAT_PACKAGE = ITEMS.register("meat_package",

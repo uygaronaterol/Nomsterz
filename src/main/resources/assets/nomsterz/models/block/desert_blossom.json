@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "nomsterz:block/desert_blossom"
+  },
+  "render_type": "cutout"
+}

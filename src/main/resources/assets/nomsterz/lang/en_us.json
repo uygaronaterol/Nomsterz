@@ -61,6 +61,10 @@
   "item.nomsterz.cooked_agwo_meat": "Cooked Agwo Meat",
   "item.nomsterz.raw_wapaulendo_meat": "Raw Wapaulendo Meat",
   "item.nomsterz.cooked_wapaulendo_meat": "Cooked Wapaulendo Meat",
+  "item.nomsterz.raw_loqayd_meat": "Raw Loqayd Meat",
+  "item.nomsterz.cooked_loqayd_meat": "Cooked Loqayd Meat",
+  "item.nomsterz.raw_ferrker_meat": "Raw Ferrker Meat",
+  "item.nomsterz.cooked_ferrker_meat": "Cooked Ferrker Meat",
   "item.nomsterz.dhirta": "Dhirta",
   "item.nomsterz.ghoga_spit": "Ghoga Spit",
   "item.nomsterz.swerdarm_sword_piece": "Swerdarm Sword Piece",
@@ -75,6 +79,9 @@
   "item.nomsterz.wapaulendo_tail": "Wapaulendo Tail",
   "item.nomsterz.nomster_sword": "Nomster Sword",
   "item.nomsterz.nomster_sword_handle": "Nomster Sword Handle",
+  "item.nomsterz.cholenka_piece": "Cholenka Piece",
+  "item.nomsterz.ferrker_shell": "Ferrker Shell",
+  "item.nomsterz.loqayd_head": "Loqayd Head",
 
   "item.nomsterz.derrmues_tooth": "Derrmues Tooth",
   "item.nomsterz.piara_head": "Piara Head",
@@ -114,7 +121,9 @@
   "item.nomsterz.bekor_egg_spawn_egg": "Bekor Egg Spawn Egg",
   "item.nomsterz.wapaulendo_spawn_egg": "Wapaulendo Spawn Egg",
   "item.nomsterz.agwo_spawn_egg": "Agwo Spawn Egg",
-
+  "item.nomsterz.cholenka_spawn_egg": "Cholenka Spawn Egg",
+  "item.nomsterz.ferrker_spawn_egg": "Ferrker Spawn Egg",
+  "item.nomsterz.loqayd_spawn_egg": "Loqayd Spawn Egg",
   "item.nomsterz.nomster_essence": "Nomster Essence",
   "entity.minecraft.villager.nomsterz.nomster_expert": "Nomster Expert",
   "item.nomsterz.nyanga_antler": "Nyanga Antler",
@@ -142,7 +151,7 @@
   "item.nomsterz.cooked_osipiti_meat": "Cooked Osipiti Meat",
   "item.nomsterz.cooked_piara_meat": "Cooked Piara Meat",
   "enchantment.nomsterz.nomster_sword_sharpness": "Nomster Sword Sharpness",
-
+  "block.nomsterz.desert_blossom": "Desert Blossom",
 
   "sounds.nomsterz.nyanga_idle": "Nyanga Idle",
   "sounds.nomsterz.nyanga_idle2": "Nyanga Idle 2",

@@ -3,8 +3,8 @@
   "biomes": "#minecraft:is_ocean",
   "entity": {
     "type": "nomsterz:emabri",
-    "weight": 2,
-    "minCount": 4,
-    "maxCount": 5
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
   }
 }

@@ -244,14 +244,6 @@ public class KashisosEntity extends TamableAnimal implements IAnimatable, Player
     }
 
     @Override
-    public float getSpeed() {
-        if(this.isInWater()){
-            return 1.2f;
-        }
-        return super.getSpeed();
-    }
-
-    @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController(this, "controller",
                 0, this::predicate));

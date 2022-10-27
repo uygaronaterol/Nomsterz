@@ -1,0 +1,10 @@
+{
+  "type": "nomsterz:entities",
+  "biomes": "#forge:is_coniferous",
+  "entity": {
+    "type": "nomsterz:cholenka",
+    "weight": 1,
+    "minCount": 0,
+    "maxCount": 1
+  }
+}

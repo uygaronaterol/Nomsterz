@@ -4,7 +4,7 @@
   "entity": {
     "type": "nomsterz:yonsi",
     "weight": 1,
-    "minCount": 2,
-    "maxCount": 3
+    "minCount": 0,
+    "maxCount": 1
   }
 }

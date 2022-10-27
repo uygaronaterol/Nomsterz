@@ -79,6 +79,16 @@ public class ModFoods {
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
     public static final FoodProperties COOKED_WAPAULENDO_MEAT = (new FoodProperties.Builder()).nutrition(8).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_FERRKER_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_FERRKER_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_LOQAYD_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_LOQAYD_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).meat().build();
+    public static final FoodProperties CHOLENKA_PIECE = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.LEVITATION, 600, 0), 1F).meat().build();
 
     public static final FoodProperties DHIRTA = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.3f).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 1F).build();

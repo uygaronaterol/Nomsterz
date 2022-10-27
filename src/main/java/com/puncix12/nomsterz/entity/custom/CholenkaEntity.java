@@ -243,7 +243,7 @@ public class CholenkaEntity extends TamableAnimal implements IAnimatable {
             event.getController().setAnimation(new AnimationBuilder().
                     addAnimation("animation.cholenka.attack", false));
             this.swinging = false;
-            playSound(ModSounds.GHOGA_HIT.get());
+            playSound(SoundEvents.BEE_STING);
         }
         return PlayState.CONTINUE;
     }
@@ -266,19 +266,19 @@ public class CholenkaEntity extends TamableAnimal implements IAnimatable {
     @Override
     protected SoundEvent getAmbientSound() {
         attackEntityWithRangedAttack((LivingEntity)this.getTarget());
-        return ModSounds.GHOGA_IDLE.get();
+        return SoundEvents.BEE_LOOP;
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return ModSounds.GHOGA_HIT.get();
+        return SoundEvents.BEE_HURT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return ModSounds.GHOGA_DEATH.get();
+        return SoundEvents.BEE_DEATH;
     }
 
     public void attackEntityWithRangedAttack(LivingEntity target) {

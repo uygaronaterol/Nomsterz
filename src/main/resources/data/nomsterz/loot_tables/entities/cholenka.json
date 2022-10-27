@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nomsterz:cholenka_piece"
+        }
+      ]}
+  ,{
+      "rolls": {
+        "min": 7,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nomsterz:nomster_essence"
+        }
+      ]
+    }
+  ]
+}

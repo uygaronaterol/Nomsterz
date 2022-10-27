@@ -91,6 +91,14 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("cholenka",
                     () -> EntityType.Builder.of(CholenkaEntity::new, MobCategory.CREATURE).sized(1f,2f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "cholenka").toString()));
+    public static final RegistryObject<EntityType<LoqaydEntity>> LOQAYD =
+            ENTITY_TYPES.register("loqayd",
+                    () -> EntityType.Builder.of(LoqaydEntity::new, MobCategory.CREATURE).sized(1.6f,1f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "loqayd").toString()));
+    public static final RegistryObject<EntityType<FerrkerEntity>> FERRKER =
+            ENTITY_TYPES.register("ferrker",
+                    () -> EntityType.Builder.of(FerrkerEntity::new, MobCategory.CREATURE).sized(1f,0.6f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "ferrker").toString()));
 
     public static final RegistryObject<EntityType<DerrmuesEggEntity>> DERRMUES_EGG =
             ENTITY_TYPES.register("derrmues_egg",

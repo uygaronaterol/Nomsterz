@@ -18,7 +18,9 @@ public class ModPlacedFeatures {
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, Nomsterz.MOD_ID);
 
 
-
+    public static final RegistryObject<PlacedFeature> DESERT_BLOSSOM_PLACED = PLACED_FEATURES.register("desert_blossom_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.DESERT_BLOSSOM.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(1),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 
 
     public static final RegistryObject<PlacedFeature> LAUS_CHECKED = PLACED_FEATURES.register("laus_checked",

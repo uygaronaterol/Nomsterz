@@ -60,55 +60,6 @@ public class Nomsterz
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-
-            SpawnPlacements.register(ModEntityTypes.AGWO.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.BEKOR.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.DERRMUES.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.GHOGA.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.KASHISOS.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.NATSHAI.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.NYANGA.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.OHANUSH.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.OSIPITI.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.PELLATT.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.PIARA.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.ROHARK.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.SWERDARM.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.WAPAULENDO.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.YONSI.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
-            SpawnPlacements.register(ModEntityTypes.CHOLENKA.get(),
-                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                    Animal::checkAnimalSpawnRules);
             ModVillagers.registerPOIs();
         });
     }
@@ -139,6 +90,8 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.WAPAULENDO.get(), WapaulendoRenderer::new);
             EntityRenderers.register(ModEntityTypes.AGWO.get(), AgwoRenderer::new);
             EntityRenderers.register(ModEntityTypes.CHOLENKA.get(), CholenkaRenderer::new);
+            EntityRenderers.register(ModEntityTypes.LOQAYD.get(), LoqaydRenderer::new);
+            EntityRenderers.register(ModEntityTypes.FERRKER.get(), FerrkerRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggRenderer::new);
             EntityRenderers.register(ModEntityTypes.BEKOR_EGG.get(), BekorEggRenderer::new);
