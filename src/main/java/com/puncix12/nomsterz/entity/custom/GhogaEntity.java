@@ -279,7 +279,7 @@ public class GhogaEntity extends TamableAnimal implements IAnimatable {
 
     public void attackEntityWithRangedAttack(LivingEntity target) {
 
-        if(this.getTarget() instanceof  LivingEntity) {
+        if(this.getTarget() instanceof  LivingEntity && !this.level.isClientSide()) {
             double d0 = target.getX() - this.getX();
             double d1 = target.getY(0.33D) - this.getY();
             double d2 = target.getZ() - this.getZ();

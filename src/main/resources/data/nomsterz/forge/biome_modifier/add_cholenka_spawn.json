@@ -3,8 +3,8 @@
   "biomes": "#forge:is_coniferous",
   "entity": {
     "type": "nomsterz:cholenka",
-    "weight": 1,
-    "minCount": 0,
+    "weight": 5,
+    "minCount": 1,
     "maxCount": 1
   }
 }

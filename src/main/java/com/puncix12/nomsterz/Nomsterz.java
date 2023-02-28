@@ -92,14 +92,11 @@ public class Nomsterz
             EntityRenderers.register(ModEntityTypes.CHOLENKA.get(), CholenkaRenderer::new);
             EntityRenderers.register(ModEntityTypes.LOQAYD.get(), LoqaydRenderer::new);
             EntityRenderers.register(ModEntityTypes.FERRKER.get(), FerrkerRenderer::new);
+            EntityRenderers.register(ModEntityTypes.DNIGHT.get(), DNightRenderer::new);
 
             EntityRenderers.register(ModEntityTypes.DERRMUES_EGG.get(), DerrmuesEggRenderer::new);
             EntityRenderers.register(ModEntityTypes.BEKOR_EGG.get(), BekorEggRenderer::new);
-
-            EntityRenderers.register(ModEntityTypes.GHOGA_SPIT_PROJECTILE.get(), GhogaSpitProjectileRenderer::new);
-            EntityRenderers.register(ModEntityTypes.ROHARK_QUILL_PROJECTILE.get(), RoharkQuillProjectileRenderer::new);
-            EntityRenderers.register(ModEntityTypes.BEKOR_PROJECTILE.get(), BekorProjectileRenderer::new);
-            EntityRenderers.register(ModEntityTypes.CHOLENKA_PROJECTILE.get(), CholenkaProjectileRenderer::new);
+            EntityRenderers.register(ModEntityTypes.DNIGHT_EGG.get(), DNightEggRenderer::new);
 
 
             MenuScreens.register(ModMenuTypes.NOMSTER_CRAFTING_TABLE_MENU.get(), NomsterCraftingTableScreen::new);

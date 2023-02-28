@@ -136,6 +136,14 @@ public class ModSounds {
             registerSoundEvent("bekor_idle");
     public static final RegistryObject<SoundEvent> BEKOR_DEATH =
             registerSoundEvent("bekor_death");
+    public static final RegistryObject<SoundEvent> DNIGHT_ATTACK =
+            registerSoundEvent("dnight_attack");
+    public static final RegistryObject<SoundEvent> DNIGHT_HIT =
+            registerSoundEvent("dnight_hit");
+    public static final RegistryObject<SoundEvent> DNIGHT_IDLE =
+            registerSoundEvent("dnight_idle");
+    public static final RegistryObject<SoundEvent> DNIGHT_DEATH =
+            registerSoundEvent("dnight_death");
     private static RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Nomsterz.MOD_ID, name)));
     }

@@ -63,6 +63,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> FERRKER_SHELL = ITEMS.register("ferrker_shell",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> DNIGHT_EYE = ITEMS.register("dnight_eye",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Spawn Eggs
     public static final RegistryObject<Item> NATSHAI_SPAWN_EGG = ITEMS.register("natshai_spawn_egg",
@@ -128,6 +130,9 @@ public class ModItems {
     public static final RegistryObject<Item> FERRKER_SPAWN_EGG = ITEMS.register("ferrker_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.FERRKER,0x482e15,0xa09f5a
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
+    public static final RegistryObject<Item> DNIGHT_SPAWN_EGG = ITEMS.register("dnight_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DNIGHT,0x6f0808,0x7e0606
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     public static final RegistryObject<Item> DERRMUES_EGG_SPAWN_EGG = ITEMS.register("derrmues_egg_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.DERRMUES_EGG,0x3d483b,0x133716
@@ -135,7 +140,9 @@ public class ModItems {
     public static final RegistryObject<Item> BEKOR_EGG_SPAWN_EGG = ITEMS.register("bekor_egg_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.BEKOR_EGG,0x2a2f25,0x4fc353
                     ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
-
+    public static final RegistryObject<Item> DNIGHT_EGG_SPAWN_EGG = ITEMS.register("dnight_egg_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DNIGHT_EGG,0x6f0808,0x7e0606
+                    ,new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
 
     //Nomster items
     public static final RegistryObject<Item> NOMSTER_COMMANDER = ITEMS.register("nomster_commander",
@@ -168,6 +175,10 @@ public class ModItems {
             () -> new BekorEggItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
     public static final RegistryObject<Item> BEKOR_SUMMONING_KEY = ITEMS.register("bekor_summoning_key",
             () -> new BekorSummoningKeyItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> DNIGHT_EGG = ITEMS.register("dnight_egg",
+            () -> new DNightEggItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> DNIGHT_SUMMONING_KEY = ITEMS.register("dnight_summoning_key",
+            () -> new DNightSummoningKeyItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).stacksTo(1)));
     public static final RegistryObject<Item> NOMSTER_SWORD_HANDLE = ITEMS.register("nomster_sword_handle",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB)));
     public static final RegistryObject<Item> NOMSTER_SWORD = ITEMS.register("nomster_sword",
@@ -255,6 +266,10 @@ public class ModItems {
             () -> new DangerousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_FERRKER_MEAT)));
     public static final RegistryObject<Item> COOKED_FERRKER_MEAT = ITEMS.register("cooked_ferrker_meat",
             () -> new MeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_FERRKER_MEAT)));
+    public static final RegistryObject<Item> COOKED_DNIGHT_MEAT = ITEMS.register("cooked_dnight_meat",
+            () -> new DangerousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.COOKED_DNIGHT_MEAT)));
+    public static final RegistryObject<Item> RAW_DNIGHT_MEAT = ITEMS.register("raw_dnight_meat",
+            () -> new HazardousMeatItem(new Item.Properties().tab(ModCreativeModeTab.NOMSTERZ_TAB).food(ModFoods.RAW_DNIGHT_MEAT)));
 
     //Nomster foods
     public static final RegistryObject<Item> MEAT_PACKAGE = ITEMS.register("meat_package",

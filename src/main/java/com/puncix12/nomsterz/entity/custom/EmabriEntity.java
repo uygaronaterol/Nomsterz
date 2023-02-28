@@ -101,7 +101,7 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
                 .add(Attributes.MOVEMENT_SPEED, 0.115f)
                 .add(Attributes.JUMP_STRENGTH, 0.5f)
                 .add(Attributes.ARMOR, 6f)
-                .add(Attributes.FOLLOW_RANGE, 50f).build();
+                .add(Attributes.FOLLOW_RANGE, 30f).build();
     }
 
     @Override
@@ -122,11 +122,8 @@ public class EmabriEntity extends TamableAnimal implements IAnimatable, PlayerRi
 
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
-        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, NyangaEntity.class, true));
-        this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Cow.class, true));
-        this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, Sheep.class, true));
+        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, TropicalFish.class, true));
+
 
 
     }

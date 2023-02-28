@@ -99,7 +99,10 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("ferrker",
                     () -> EntityType.Builder.of(FerrkerEntity::new, MobCategory.CREATURE).sized(1f,0.6f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "ferrker").toString()));
-
+    public static final RegistryObject<EntityType<DNightEntity>> DNIGHT =
+            ENTITY_TYPES.register("dnight",
+                    () -> EntityType.Builder.of(DNightEntity::new, MobCategory.CREATURE).sized(5f,1.6f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "dnight").toString()));
     public static final RegistryObject<EntityType<DerrmuesEggEntity>> DERRMUES_EGG =
             ENTITY_TYPES.register("derrmues_egg",
                     () -> EntityType.Builder.of(DerrmuesEggEntity::new, MobCategory.CREATURE).sized(0.5f,0.5f)
@@ -108,6 +111,11 @@ public class ModEntityTypes {
             ENTITY_TYPES.register("bekor_egg",
                     () -> EntityType.Builder.of(BekorEggEntity::new, MobCategory.CREATURE).sized(0.5f,0.5f)
                             .build(new ResourceLocation(Nomsterz.MOD_ID, "bekor_egg").toString()));
+    public static final RegistryObject<EntityType<DNightEggEntity>> DNIGHT_EGG =
+            ENTITY_TYPES.register("dnight_egg",
+                    () -> EntityType.Builder.of(DNightEggEntity::new, MobCategory.CREATURE).sized(0.5f,0.5f)
+                            .build(new ResourceLocation(Nomsterz.MOD_ID, "dnight_egg").toString()));
+
 
     public static final RegistryObject<EntityType<GhogaSpitProjectile>> GHOGA_SPIT_PROJECTILE = ENTITY_TYPES.register("ghoga_spit_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<GhogaSpitProjectile>)
@@ -121,6 +129,9 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<CholenkaProjectile>> CHOLENKA_PROJECTILE = ENTITY_TYPES.register("cholenka_projectile",
             () -> EntityType.Builder.of((EntityType.EntityFactory<CholenkaProjectile>)
                     CholenkaProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("cholenka_projectile"));
+    public static final RegistryObject<EntityType<DNightProjectile>> DNIGHT_PROJECTILE = ENTITY_TYPES.register("dnight_projectile",
+            () -> EntityType.Builder.of((EntityType.EntityFactory<DNightProjectile>)
+                    DNightProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("dnight_projectile"));
     public static void register(IEventBus bus){
         ENTITY_TYPES.register(bus);
     }

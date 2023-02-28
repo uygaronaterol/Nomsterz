@@ -370,5 +370,29 @@
     "sounds": [
       "nomsterz:bekor_hit"
     ]
+  },
+  "dnight_attack": {
+    "subtitle": "nomsterz.dnight_attack",
+    "sounds": [
+      "nomsterz:dnight_attack"
+    ]
+  },
+  "dnight_idle": {
+    "subtitle": "nomsterz.dnight_idle",
+    "sounds": [
+      "nomsterz:dnight_idle"
+    ]
+  },
+  "dnight_death": {
+    "subtitle": "nomsterz.dnight_death",
+    "sounds": [
+      "nomsterz:dnight_death"
+    ]
+  },
+  "dnight_hit": {
+    "subtitle": "nomsterz.dnight_hit",
+    "sounds": [
+      "nomsterz:dnight_hit"
+    ]
   }
 }

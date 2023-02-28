@@ -89,6 +89,10 @@ public class ModFoods {
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).meat().build();
     public static final FoodProperties CHOLENKA_PIECE = (new FoodProperties.Builder()).nutrition(3).
             saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.LEVITATION, 600, 0), 1F).meat().build();
+    public static final FoodProperties COOKED_DNIGHT_MEAT = (new FoodProperties.Builder()).nutrition(8).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WEAKNESS, 600, 0), 1F).meat().build();
+    public static final FoodProperties RAW_DNIGHT_MEAT = (new FoodProperties.Builder()).nutrition(3).
+            saturationMod(0.6f).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1600, 0), 1F).meat().build();
 
     public static final FoodProperties DHIRTA = (new FoodProperties.Builder()).nutrition(2).
             saturationMod(0.3f).effect(new MobEffectInstance(MobEffects.HEAL, 600, 0), 1F).build();

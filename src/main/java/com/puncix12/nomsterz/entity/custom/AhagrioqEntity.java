@@ -4,7 +4,6 @@ import com.puncix12.nomsterz.entity.ModEntityTypes;
 import com.puncix12.nomsterz.item.ModItems;
 import com.puncix12.nomsterz.sound.ModSounds;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.FluidTags;
@@ -96,12 +95,12 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
     public static AttributeSupplier setAttributes() {
         return TamableAnimal.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 45.0D)
-                .add(Attributes.ATTACK_DAMAGE, 10f)
+                .add(Attributes.ATTACK_DAMAGE, 8.5f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.165f)
                 .add(Attributes.JUMP_STRENGTH, 0.5f)
                 .add(Attributes.ARMOR, 3.5f)
-                .add(Attributes.FOLLOW_RANGE, 100f).build();
+                .add(Attributes.FOLLOW_RANGE, 50f).build();
     }
 
     @Override
@@ -121,12 +120,9 @@ public class AhagrioqEntity extends TamableAnimal implements IAnimatable, Player
         this.targetSelector.addGoal(0, new HurtByTargetGoal(this));
 
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, true));
-        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
-        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, NyangaEntity.class, true));
-        this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Cow.class, true));
-        this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, Sheep.class, true));
+        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, TropicalFish.class, false));
+        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, Squid.class, true));
+        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Dolphin.class, true));
 
 
     }

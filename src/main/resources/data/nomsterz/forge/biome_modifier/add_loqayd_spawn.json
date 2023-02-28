@@ -3,7 +3,7 @@
   "biomes": "#forge:is_coniferous",
   "entity": {
     "type": "nomsterz:loqayd",
-    "weight": 1,
+    "weight": 6,
     "minCount": 1,
     "maxCount": 1
   }

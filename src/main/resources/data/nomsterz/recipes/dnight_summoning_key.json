@@ -1,0 +1,18 @@
+{
+  "type": "nomsterz:nomster_crafting",
+  "ingredients": [
+    {"item": "nomsterz:wapaulendo_tail"},
+    {"item": "nomsterz:desert_blossom"},
+    {"item": "nomsterz:agwo_fang"},
+    {"item": "nomsterz:natshai_skin"},
+    {"item": "minecraft:amethyst_shard"},
+    {"item": "minecraft:netherite_ingot"},
+    {"item": "nomsterz:pellatt_beak"},
+    {"item": "minecraft:cactus"},
+    {"item": "nomsterz:pellatt_beak"}
+  ],
+  "output": {
+    "item": "nomsterz:dnight_summoning_key",
+    "count": 1
+  }
+}

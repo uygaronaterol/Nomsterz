@@ -100,7 +100,7 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
                 .add(Attributes.MOVEMENT_SPEED, 0.185f)
                 .add(Attributes.JUMP_STRENGTH, 0.5f)
                 .add(Attributes.ARMOR, 2.5f)
-                .add(Attributes.FOLLOW_RANGE, 100f).build();
+                .add(Attributes.FOLLOW_RANGE, 40f).build();
     }
 
     @Override
@@ -121,11 +121,9 @@ public class IvekrocEntity extends TamableAnimal implements IAnimatable, PlayerR
 
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
-        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
-        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, NyangaEntity.class, true));
-        this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Cow.class, true));
-        this.targetSelector.addGoal(8, new NearestAttackableTargetGoal<>(this, Sheep.class, true));
+        this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, TropicalFish.class, true));
+        this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, Squid.class, true));
+
 
 
     }

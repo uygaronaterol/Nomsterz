@@ -2,7 +2,7 @@
   "type": "nomsterz:nomster_crafting",
   "ingredients": [
     {"item": "nomsterz:bekor_eye_piece"},
-    {"item": "nomsterz:wapaulendo_tail"},
+    {"item": "nomsterz:dnight_eye"},
     {"item": "nomsterz:ahagrioq_fin"},
     {"item": "nomsterz:derrmues_tooth"},
     {"item": "minecraft:netherite_ingot"},
